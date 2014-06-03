@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Triangle : NSObject
+@interface Triangle : NSOpenGLView
 
 @end

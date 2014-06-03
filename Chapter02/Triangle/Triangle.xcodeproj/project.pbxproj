@@ -19,6 +19,8 @@
 		84584889193C5105008FFE77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84584887193C5105008FFE77 /* InfoPlist.strings */; };
 		8458488B193C5105008FFE77 /* TriangleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8458488A193C5105008FFE77 /* TriangleTests.m */; };
 		84C8F7B3193D4C6500911378 /* Triangle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84C8F7B2193D4C6500911378 /* Triangle.mm */; };
+		84C8F7F2193D6B2200911378 /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C8F7F1193D6B2200911378 /* libgltoolscpp.a */; };
+		84C8F7F4193D6B9F00911378 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C8F7F3193D6B9F00911378 /* libstdc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 845847D1193B8EC5008FFE77;
 			remoteInfo = GLToolsTests;
+		};
+		84C8F7F0193D6B2200911378 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84584895193C5138008FFE77 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C8F7C0193D67F400911378;
+			remoteInfo = gltoolscpp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -69,6 +78,7 @@
 		84584895193C5138008FFE77 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
 		84C8F7B1193D4C6500911378 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
 		84C8F7B2193D4C6500911378 /* Triangle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Triangle.mm; sourceTree = "<group>"; };
+		84C8F7F3193D6B9F00911378 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C8F7F4193D6B9F00911378 /* libstdc++.dylib in Frameworks */,
+				84C8F7F2193D6B2200911378 /* libgltoolscpp.a in Frameworks */,
 				84584861193C5105008FFE77 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +128,7 @@
 		8458485F193C5105008FFE77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84C8F7F3193D6B9F00911378 /* libstdc++.dylib */,
 				84584860193C5105008FFE77 /* Cocoa.framework */,
 				8458487F193C5105008FFE77 /* XCTest.framework */,
 				84584862193C5105008FFE77 /* Other Frameworks */,
@@ -182,6 +195,7 @@
 			children = (
 				8458489B193C5138008FFE77 /* GLTools.framework */,
 				8458489D193C5138008FFE77 /* GLToolsTests.xctest */,
+				84C8F7F1193D6B2200911378 /* libgltoolscpp.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,6 +290,13 @@
 			fileType = wrapper.cfbundle;
 			path = GLToolsTests.xctest;
 			remoteRef = 8458489C193C5138008FFE77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C8F7F1193D6B2200911378 /* libgltoolscpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgltoolscpp.a;
+			remoteRef = 84C8F7F0193D6B2200911378 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -444,6 +465,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Triangle/Triangle-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					../../GLTools/cpp/include,
+				);
 				INFOPLIST_FILE = "Triangle/Triangle-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -457,6 +483,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Triangle/Triangle-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					../../GLTools/cpp/include,
+				);
 				INFOPLIST_FILE = "Triangle/Triangle-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

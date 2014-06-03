@@ -351,7 +351,7 @@
 		845847B1193B8EC5008FFE77 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Lichen Labs";
 				TargetAttributes = {
 					845847D0193B8EC5008FFE77 = {
@@ -666,6 +666,7 @@
 				84C8F7C3193D67F400911378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
