@@ -19,6 +19,27 @@
 		845847EC193B9138008FFE77 /* ShaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 845847EA193B9138008FFE77 /* ShaderManager.m */; };
 		845847F2193B9237008FFE77 /* StockShaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 845847F0193B9237008FFE77 /* StockShaders.h */; };
 		845847F3193B9237008FFE77 /* StockShaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 845847F1193B9237008FFE77 /* StockShaders.m */; };
+		845847F8193BBCD2008FFE77 /* GLProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = 845847F6193BBCD2008FFE77 /* GLProgram.h */; };
+		845847F9193BBCD2008FFE77 /* GLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 845847F7193BBCD2008FFE77 /* GLProgram.m */; };
+		8458489F193C51F9008FFE77 /* Drawing.h in Headers */ = {isa = PBXBuildFile; fileRef = 8458489E193C51F9008FFE77 /* Drawing.h */; };
+		845848A2193C523C008FFE77 /* PointSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 845848A0193C523C008FFE77 /* PointSet.h */; };
+		845848A3193C523C008FFE77 /* PointSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 845848A1193C523C008FFE77 /* PointSet.m */; };
+		84C8F7D8193D681A00911378 /* GLBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7C7193D681A00911378 /* GLBatch.h */; };
+		84C8F7D9193D681A00911378 /* GLBatchBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7C8193D681A00911378 /* GLBatchBase.h */; };
+		84C8F7DA193D681A00911378 /* GLFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7C9193D681A00911378 /* GLFrame.h */; };
+		84C8F7DB193D681A00911378 /* GLFrustum.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7CA193D681A00911378 /* GLFrustum.h */; };
+		84C8F7DC193D681A00911378 /* GLGeometryTransform.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7CB193D681A00911378 /* GLGeometryTransform.h */; };
+		84C8F7DD193D681A00911378 /* GLMatrixStack.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7CC193D681A00911378 /* GLMatrixStack.h */; };
+		84C8F7DE193D681A00911378 /* GLShaderManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7CD193D681A00911378 /* GLShaderManager.h */; };
+		84C8F7DF193D681A00911378 /* GLTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7CE193D681A00911378 /* GLTools.h */; };
+		84C8F7E0193D681A00911378 /* GLTriangleBatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7CF193D681A00911378 /* GLTriangleBatch.h */; };
+		84C8F7E1193D681A00911378 /* math3d.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7D0193D681A00911378 /* math3d.h */; };
+		84C8F7E2193D681A00911378 /* StopWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 84C8F7D1193D681A00911378 /* StopWatch.h */; };
+		84C8F7E3193D681A00911378 /* GLBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C8F7D3193D681A00911378 /* GLBatch.cpp */; };
+		84C8F7E4193D681A00911378 /* GLShaderManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C8F7D4193D681A00911378 /* GLShaderManager.cpp */; };
+		84C8F7E5193D681A00911378 /* GLTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C8F7D5193D681A00911378 /* GLTools.cpp */; };
+		84C8F7E6193D681A00911378 /* GLTriangleBatch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C8F7D6193D681A00911378 /* GLTriangleBatch.cpp */; };
+		84C8F7E7193D681A00911378 /* math3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84C8F7D7193D681A00911378 /* math3d.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,11 +68,34 @@
 		845847DA193B8EC5008FFE77 /* GLToolsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLToolsTests-Info.plist"; sourceTree = "<group>"; };
 		845847DC193B8EC5008FFE77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		845847DE193B8EC5008FFE77 /* GLToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLToolsTests.m; sourceTree = "<group>"; };
-		845847E8193B8F16008FFE77 /* GLTools */ = {isa = PBXFileReference; lastKnownFileType = folder; name = GLTools; path = ../svn/oglsuperbible5/Src/GLTools; sourceTree = GITHUB_PUBLIC_ROOT; };
 		845847E9193B9138008FFE77 /* ShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShaderManager.h; sourceTree = "<group>"; };
 		845847EA193B9138008FFE77 /* ShaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShaderManager.m; sourceTree = "<group>"; };
 		845847F0193B9237008FFE77 /* StockShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StockShaders.h; sourceTree = "<group>"; };
 		845847F1193B9237008FFE77 /* StockShaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockShaders.m; sourceTree = "<group>"; };
+		845847F6193BBCD2008FFE77 /* GLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLProgram.h; sourceTree = "<group>"; };
+		845847F7193BBCD2008FFE77 /* GLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLProgram.m; sourceTree = "<group>"; };
+		8458489E193C51F9008FFE77 /* Drawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Drawing.h; sourceTree = "<group>"; };
+		845848A0193C523C008FFE77 /* PointSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PointSet.h; sourceTree = "<group>"; };
+		845848A1193C523C008FFE77 /* PointSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointSet.m; sourceTree = "<group>"; };
+		84C8F7C0193D67F400911378 /* libgltoolscpp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgltoolscpp.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C8F7C7193D681A00911378 /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		84C8F7C8193D681A00911378 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		84C8F7C9193D681A00911378 /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		84C8F7CA193D681A00911378 /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		84C8F7CB193D681A00911378 /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		84C8F7CC193D681A00911378 /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		84C8F7CD193D681A00911378 /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		84C8F7CE193D681A00911378 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		84C8F7CF193D681A00911378 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		84C8F7D0193D681A00911378 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		84C8F7D1193D681A00911378 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		84C8F7D3193D681A00911378 /* GLBatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLBatch.cpp; sourceTree = "<group>"; };
+		84C8F7D4193D681A00911378 /* GLShaderManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLShaderManager.cpp; sourceTree = "<group>"; };
+		84C8F7D5193D681A00911378 /* GLTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLTools.cpp; sourceTree = "<group>"; };
+		84C8F7D6193D681A00911378 /* GLTriangleBatch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLTriangleBatch.cpp; sourceTree = "<group>"; };
+		84C8F7D7193D681A00911378 /* math3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = math3d.cpp; sourceTree = "<group>"; };
+		84C8F7E8193D687800911378 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		84C8F7EA193D688000911378 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,17 +117,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84C8F7BD193D67F400911378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		845847B0193B8EC5008FFE77 = {
 			isa = PBXGroup;
 			children = (
+				84C8F7C5193D681A00911378 /* cpp */,
 				845847C3193B8EC5008FFE77 /* GLTools */,
 				845847D8193B8EC5008FFE77 /* GLToolsTests */,
 				845847BC193B8EC5008FFE77 /* Frameworks */,
 				845847BB193B8EC5008FFE77 /* Products */,
-				845847E8193B8F16008FFE77 /* GLTools */,
 			);
 			sourceTree = "<group>";
 		};
@@ -92,6 +143,7 @@
 			children = (
 				845847BA193B8EC5008FFE77 /* GLTools.framework */,
 				845847D1193B8EC5008FFE77 /* GLToolsTests.xctest */,
+				84C8F7C0193D67F400911378 /* libgltoolscpp.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +151,8 @@
 		845847BC193B8EC5008FFE77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84C8F7EA193D688000911378 /* OpenGL.framework */,
+				84C8F7E8193D687800911378 /* libstdc++.dylib */,
 				845847BD193B8EC5008FFE77 /* Cocoa.framework */,
 				845847D2193B8EC5008FFE77 /* XCTest.framework */,
 				845847BF193B8EC5008FFE77 /* Other Frameworks */,
@@ -119,6 +173,8 @@
 		845847C3193B8EC5008FFE77 /* GLTools */ = {
 			isa = PBXGroup;
 			children = (
+				845847F6193BBCD2008FFE77 /* GLProgram.h */,
+				845847F7193BBCD2008FFE77 /* GLProgram.m */,
 				845847CA193B8EC5008FFE77 /* GLTools.h */,
 				845847CB193B8EC5008FFE77 /* GLTools.m */,
 				845847C4193B8EC5008FFE77 /* Supporting Files */,
@@ -126,6 +182,9 @@
 				845847EA193B9138008FFE77 /* ShaderManager.m */,
 				845847F0193B9237008FFE77 /* StockShaders.h */,
 				845847F1193B9237008FFE77 /* StockShaders.m */,
+				8458489E193C51F9008FFE77 /* Drawing.h */,
+				845848A0193C523C008FFE77 /* PointSet.h */,
+				845848A1193C523C008FFE77 /* PointSet.m */,
 			);
 			path = GLTools;
 			sourceTree = "<group>";
@@ -158,6 +217,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		84C8F7C5193D681A00911378 /* cpp */ = {
+			isa = PBXGroup;
+			children = (
+				84C8F7C6193D681A00911378 /* include */,
+				84C8F7D2193D681A00911378 /* src */,
+			);
+			path = cpp;
+			sourceTree = "<group>";
+		};
+		84C8F7C6193D681A00911378 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				84C8F7C7193D681A00911378 /* GLBatch.h */,
+				84C8F7C8193D681A00911378 /* GLBatchBase.h */,
+				84C8F7C9193D681A00911378 /* GLFrame.h */,
+				84C8F7CA193D681A00911378 /* GLFrustum.h */,
+				84C8F7CB193D681A00911378 /* GLGeometryTransform.h */,
+				84C8F7CC193D681A00911378 /* GLMatrixStack.h */,
+				84C8F7CD193D681A00911378 /* GLShaderManager.h */,
+				84C8F7CE193D681A00911378 /* GLTools.h */,
+				84C8F7CF193D681A00911378 /* GLTriangleBatch.h */,
+				84C8F7D0193D681A00911378 /* math3d.h */,
+				84C8F7D1193D681A00911378 /* StopWatch.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		84C8F7D2193D681A00911378 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				84C8F7D3193D681A00911378 /* GLBatch.cpp */,
+				84C8F7D4193D681A00911378 /* GLShaderManager.cpp */,
+				84C8F7D5193D681A00911378 /* GLTools.cpp */,
+				84C8F7D6193D681A00911378 /* GLTriangleBatch.cpp */,
+				84C8F7D7193D681A00911378 /* math3d.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -165,8 +263,29 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845848A2193C523C008FFE77 /* PointSet.h in Headers */,
 				845847F2193B9237008FFE77 /* StockShaders.h in Headers */,
 				845847EB193B9138008FFE77 /* ShaderManager.h in Headers */,
+				845847F8193BBCD2008FFE77 /* GLProgram.h in Headers */,
+				8458489F193C51F9008FFE77 /* Drawing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C8F7BE193D67F400911378 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C8F7E0193D681A00911378 /* GLTriangleBatch.h in Headers */,
+				84C8F7E1193D681A00911378 /* math3d.h in Headers */,
+				84C8F7DC193D681A00911378 /* GLGeometryTransform.h in Headers */,
+				84C8F7DE193D681A00911378 /* GLShaderManager.h in Headers */,
+				84C8F7DD193D681A00911378 /* GLMatrixStack.h in Headers */,
+				84C8F7DF193D681A00911378 /* GLTools.h in Headers */,
+				84C8F7E2193D681A00911378 /* StopWatch.h in Headers */,
+				84C8F7DA193D681A00911378 /* GLFrame.h in Headers */,
+				84C8F7D8193D681A00911378 /* GLBatch.h in Headers */,
+				84C8F7DB193D681A00911378 /* GLFrustum.h in Headers */,
+				84C8F7D9193D681A00911378 /* GLBatchBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +328,23 @@
 			productReference = 845847D1193B8EC5008FFE77 /* GLToolsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		84C8F7BF193D67F400911378 /* gltoolscpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84C8F7C1193D67F400911378 /* Build configuration list for PBXNativeTarget "gltoolscpp" */;
+			buildPhases = (
+				84C8F7BC193D67F400911378 /* Sources */,
+				84C8F7BD193D67F400911378 /* Frameworks */,
+				84C8F7BE193D67F400911378 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gltoolscpp;
+			productName = gltoolscpp;
+			productReference = 84C8F7C0193D67F400911378 /* libgltoolscpp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -220,6 +356,9 @@
 				TargetAttributes = {
 					845847D0193B8EC5008FFE77 = {
 						TestTargetID = 845847B9193B8EC5008FFE77;
+					};
+					84C8F7BF193D67F400911378 = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -237,6 +376,7 @@
 			targets = (
 				845847B9193B8EC5008FFE77 /* GLTools */,
 				845847D0193B8EC5008FFE77 /* GLToolsTests */,
+				84C8F7BF193D67F400911378 /* gltoolscpp */,
 			);
 		};
 /* End PBXProject section */
@@ -265,7 +405,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845848A3193C523C008FFE77 /* PointSet.m in Sources */,
 				845847EC193B9138008FFE77 /* ShaderManager.m in Sources */,
+				845847F9193BBCD2008FFE77 /* GLProgram.m in Sources */,
 				845847CC193B8EC5008FFE77 /* GLTools.m in Sources */,
 				845847F3193B9237008FFE77 /* StockShaders.m in Sources */,
 			);
@@ -276,6 +418,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				845847DF193B8EC5008FFE77 /* GLToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84C8F7BC193D67F400911378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84C8F7E7193D681A00911378 /* math3d.cpp in Sources */,
+				84C8F7E3193D681A00911378 /* GLBatch.cpp in Sources */,
+				84C8F7E5193D681A00911378 /* GLTools.cpp in Sources */,
+				84C8F7E4193D681A00911378 /* GLShaderManager.cpp in Sources */,
+				84C8F7E6193D681A00911378 /* GLTriangleBatch.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +603,32 @@
 			};
 			name = Release;
 		};
+		84C8F7C2193D67F400911378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84C8F7C3193D67F400911378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -468,12 +648,22 @@
 				845847E4193B8EC5008FFE77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		845847E5193B8EC5008FFE77 /* Build configuration list for PBXNativeTarget "GLToolsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				845847E6193B8EC5008FFE77 /* Debug */,
 				845847E7193B8EC5008FFE77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84C8F7C1193D67F400911378 /* Build configuration list for PBXNativeTarget "gltoolscpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84C8F7C2193D67F400911378 /* Debug */,
+				84C8F7C3193D67F400911378 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

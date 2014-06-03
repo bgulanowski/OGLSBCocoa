@@ -1,13 +1,15 @@
 //
-//  ShaderManager.h
+//  Drawing.h
 //  GLTools
 //
-//  Created by Brent Gulanowski on 2014-06-01.
+//  Created by Brent Gulanowski on 2014-06-02.
 //  Copyright (c) 2014 Lichen Labs. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface ShaderManager : NSObject
+@protocol Drawing <NSObject>
+
+- (void)draw;
 
 @end

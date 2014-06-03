@@ -279,7 +279,7 @@ NSString * const szTexturePointLightDiffVP = Shader_string
 );
 
 
-NSString *szTexturePointLightDiffFP = Shader_string
+NSString * const szTexturePointLightDiffFP = Shader_string
 (
 #ifdef OPENGL_ES
  precision mediump float;
@@ -292,3 +292,105 @@ NSString *szTexturePointLightDiffFP = Shader_string
 }
 );
 
+static __strong NSMutableDictionary *shaderProgramCache;
+
+@implementation GLProgram (StockPrograms)
+
++ (void)load {
+	shaderProgramCache = [[NSMutableDictionary alloc] init];
+}
+
++ (instancetype)programWithName:(NSString *)name {
+	
+	GLProgram *program = shaderProgramCache[name];
+	
+	if (!program) {
+		shaderProgramCache[name] = [self valueForKey:[NSString stringWithFormat:@"new%@Program", name]];
+	}
+	
+	return program;
+}
+
++ (instancetype)newIdentityProgram {
+	return [[self alloc] initWithVertexShaderString:szIdentityShaderVP fragmentShaderString:szIdentityShaderFP attributes:@[@"vVertex"]];
+}
+
++ (instancetype)identityProgram {
+	return [self programWithName:@"Identity"];
+}
+
++ (instancetype)newFlatProgram {
+	return [[self alloc] initWithVertexShaderString:szFlatShaderVP fragmentShaderString:szFlatShaderFP attributes:@[@"vVertex"]];
+}
+
++ (instancetype)flatProgram {
+	return [self programWithName:@"Flat"];
+}
+
++ (instancetype)newShadedProgram {
+	return [[self alloc] initWithVertexShaderString:szShadedVP fragmentShaderString:szShadedFP attributes:@[@"vVertex", @"vColor"]];
+}
+
++ (instancetype)shadedProgram {
+	return [self programWithName:@"Shaded"];
+}
+
++ (instancetype)newDefaultLightProgram {
+	return [[self alloc] initWithVertexShaderString:szDefaultLightVP fragmentShaderString:szDefaultLightFP attributes:@[@"vVertex", @"vNormal"]];
+}
+
++ (instancetype)defaultLightProgram {
+	return [self programWithName:@"DefaultLight"];
+}
+
++ (instancetype)newPointLightDiffProgram {
+	return [[self alloc] initWithVertexShaderString:szPointLightDiffVP fragmentShaderString:szPointLightDiffFP attributes:@[@"vVertex", @"vNormal"]];
+}
+
++ (instancetype)pointLightDiffProgram {
+	return [self programWithName:@"PointLightDiff"];
+}
+
++ (instancetype)newTextureReplaceProgram {
+	return [[self alloc] initWithVertexShaderString:szTextureReplaceVP fragmentShaderString:szTextureReplaceFP attributes:@[@"vVertex", @"vTexCoord0"]];
+}
+
++ (instancetype)textureReplaceProgram {
+	return [self programWithName:@"TextureReplace"];
+}
+
++ (instancetype)newTextureRectReplaceProgram {
+	return [[self alloc] initWithVertexShaderString:szTextureRectReplaceVP fragmentShaderString:szTextureRectReplaceFP attributes:@[@"vVertex", @"vTexCoord0"]];
+}
+
++ (instancetype)textureRectReplaceProgram {
+	return [self programWithName:@"TextureRectReplace"];
+}
+
++ (instancetype)newTextureModulateProgram {
+	return [[self alloc] initWithVertexShaderString:szTextureModulateVP fragmentShaderString:szTextureModulateFP attributes:@[@"vVertex", @"vTexCoord0"]];
+}
+
++ (instancetype)textureModulateProgram {
+	return [self programWithName:@"TextureModulate"];
+}
+
++ (instancetype)newTexturePointLighDiffProgram {
+	return [[self alloc] initWithVertexShaderString:szTexturePointLightDiffVP fragmentShaderString:szTexturePointLightDiffFP attributes:@[@"vVertex", @"vNormal", @"vTexCoord0"]];
+}
+
++ (instancetype)texturePointLighDiffProgram {
+	return [self programWithName:@"TexturePointLightDiff"];
+}
+
+- (instancetype)initWithVertexShaderString:(NSString *)vShaderString fragmentShaderString:(NSString *)fShaderString attributes:(NSArray *)attributeNames {
+	self = [self initWithVertexShaderString:vShaderString fragmentShaderString:fShaderString];
+	if (self) {
+		for (NSString *attributeName in attributeNames) {
+			[self addAttribute:attributeName];
+		}
+	}
+	return self;
+}
+
+@end

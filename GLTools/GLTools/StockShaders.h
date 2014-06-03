@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "GLProgram.h"
+
 extern NSString * const szIdentityShaderVP;
 extern NSString * const szIdentityShaderFP;
 
@@ -33,4 +35,18 @@ extern NSString * const szTextureModulateVP;
 extern NSString * const szTextureModulateFP;
 
 extern NSString * const szTexturePointLightDiffVP;
-extern NSString *szTexturePointLightDiffFP;
+extern NSString * const szTexturePointLightDiffFP;
+
+@interface GLProgram (StockPrograms)
+
++ (instancetype)identityProgram;
++ (instancetype)flatProgram;
++ (instancetype)shadedProgram;
++ (instancetype)defaultLightProgram;
++ (instancetype)pointLightDiffProgram;
++ (instancetype)textureReplaceProgram;
++ (instancetype)textureRectReplaceProgram;
++ (instancetype)textureModulateProgram;
++ (instancetype)texturePointLighDiffProgram;
+
+@end

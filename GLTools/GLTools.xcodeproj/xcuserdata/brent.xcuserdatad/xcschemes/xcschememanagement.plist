@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>gltoolscpp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>845847D0193B8EC5008FFE77</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84C8F7B7193D4D5B00911378</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84C8F7BF193D67F400911378</key>
 		<dict>
 			<key>primary</key>
 			<true/>

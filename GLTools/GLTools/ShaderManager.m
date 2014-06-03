@@ -1,5 +1,5 @@
 //
-//  GLTShaderManager.m
+//  ShaderManager.m
 //  GLTools
 //
 //  Created by Brent Gulanowski on 2014-06-01.
@@ -11,5 +11,20 @@
 #import "StockShaders.h"
 
 @implementation ShaderManager
+
++ (void)prepareShaders {
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		
+	});
+}
+
+- (id)init {
+	self = [super init];
+	if (self) {
+		
+	}
+	return self;
+}
 
 @end
