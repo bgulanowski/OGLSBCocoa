@@ -18,6 +18,8 @@
 		84C1E6271942743700D7FF53 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E6061942743700D7FF53 /* Cocoa.framework */; };
 		84C1E62F1942743700D7FF53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C1E62D1942743700D7FF53 /* InfoPlist.strings */; };
 		84C1E6311942743700D7FF53 /* MoveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1E6301942743700D7FF53 /* MoveTests.m */; };
+		84C1E6541942759400D7FF53 /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E6461942745200D7FF53 /* libgltoolscpp.a */; };
+		84C1E6561942759C00D7FF53 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E6551942759C00D7FF53 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,13 @@
 			remoteGlobalIDString = 84C8F7C0193D67F400911378;
 			remoteInfo = gltoolscpp;
 		};
+		84C1E64F1942758F00D7FF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C1E63B1942745200D7FF53 /* GLTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C8F7BF193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +82,7 @@
 		84C1E6301942743700D7FF53 /* MoveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveTests.m; sourceTree = "<group>"; };
 		84C1E63B1942745200D7FF53 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
 		84C1E6471942746300D7FF53 /* Move */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Move; path = ../../../../../../Shared/Code/svn/oglsuperbible5/Src/Chapter02/Move; sourceTree = "<group>"; };
+		84C1E6551942759C00D7FF53 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C1E6561942759C00D7FF53 /* OpenGL.framework in Frameworks */,
 				84C1E6071942743700D7FF53 /* Cocoa.framework in Frameworks */,
+				84C1E6541942759400D7FF53 /* libgltoolscpp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +132,7 @@
 		84C1E6051942743700D7FF53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84C1E6551942759C00D7FF53 /* OpenGL.framework */,
 				84C1E6061942743700D7FF53 /* Cocoa.framework */,
 				84C1E6251942743700D7FF53 /* XCTest.framework */,
 				84C1E6081942743700D7FF53 /* Other Frameworks */,
@@ -203,6 +216,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				84C1E6501942758F00D7FF53 /* PBXTargetDependency */,
 			);
 			name = Move;
 			productName = Move;
@@ -337,6 +351,11 @@
 			isa = PBXTargetDependency;
 			target = 84C1E6021942743700D7FF53 /* Move */;
 			targetProxy = 84C1E6281942743700D7FF53 /* PBXContainerItemProxy */;
+		};
+		84C1E6501942758F00D7FF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gltoolscpp;
+			targetProxy = 84C1E64F1942758F00D7FF53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
