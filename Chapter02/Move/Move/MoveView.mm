@@ -93,19 +93,25 @@ static GLfloat vVerts[] = {
 	
 	unsigned key = [theEvent keyCode];
 	
+	BOOL notX = NO;
+	
 	if (key == kVK_UpArrow) {
 		blockY += stepSize;
 	}
 	else if (key == kVK_DownArrow) {
 		blockY -= stepSize;
 	}
+	else {
+		notX = YES;
+	}
+	
 	if(key == kVK_LeftArrow) {
 		blockX -= stepSize;
 	}
 	else if(key == kVK_RightArrow) {
 		blockX += stepSize;
 	}
-	else {
+	else if (notX) {
 		return;
 	}
 	
