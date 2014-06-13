@@ -151,6 +151,7 @@ void gltSetWorkingDirectory(const char *szArgv);
 ///////////////////////////////////////////////////////////////////////////////
 GLbyte* gltReadBMPBits(const char *szFileName, int *nWidth, int *nHeight);
 
+#if 0
 /////////////////////////////////////////////////////////////////////////////////////
 // Load a .TGA file
 GLbyte *gltReadTGABits(const char *szFileName, GLint *iWidth, GLint *iHeight, GLint *iComponents, GLenum *eFormat, GLbyte *pData = NULL);
@@ -159,6 +160,7 @@ GLbyte *gltReadTGABits(const char *szFileName, GLint *iWidth, GLint *iHeight, GL
 // Does not work on the iPhone
 #ifndef OPENGL_ES
 GLint gltGrabScreenTGA(const char *szFileName);
+#endif
 #endif
 
 

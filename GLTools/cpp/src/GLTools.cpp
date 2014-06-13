@@ -795,6 +795,7 @@ typedef struct
 // glFinish for single buffered contexts before calling this function.
 // Returns 0 if an error occurs, or 1 on success.
 // Does not work on the iPhone
+#if 0
 #ifndef OPENGL_ES
 GLint gltGrabScreenTGA(const char *szFileName)
 	{
@@ -827,7 +828,7 @@ GLint gltGrabScreenTGA(const char *szFileName)
     // the read buffer state
     glGetIntegerv(GL_READ_BUFFER, (GLint *)&lastBuffer);
     glReadBuffer(GL_FRONT);
-    glReadPixels(0, 0, iViewport[2], iViewport[3], GL_BGR_EXT, GL_UNSIGNED_BYTE, pBits);
+    glReadPixels(0, 0, iViewport[2], iViewport[3], GL_BGR, GL_UNSIGNED_BYTE, pBits);
     glReadBuffer(lastBuffer);
     
     // Initialize the Targa header
@@ -987,6 +988,7 @@ GLbyte *gltReadTGABits(const char *szFileName, GLint *iWidth, GLint *iHeight, GL
     // Return pointer to image data
     return pBits;
 	}
+#endif
 
 ///////////////////////////////////////////////////////////////////////////////
 // This function opens the "bitmap" file given (szFileName), verifies that it is
@@ -1252,7 +1254,7 @@ GLuint gltLoadShaderTripletWithAttributes(const char *szVertexShader,
     if(testVal == GL_FALSE) {
         char infoLog[1024];
         glGetProgramInfoLog(hReturn, 1024, NULL, infoLog);
-        fprintf(stderr, infoLog);
+        fprintf(stderr, "%s", infoLog);
         goto failed;
     }
 
