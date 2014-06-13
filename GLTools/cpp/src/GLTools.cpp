@@ -1054,7 +1054,7 @@ GLbyte* gltReadBMPBits(const char *szFileName, int *nWidth, int *nHeight)
 
 	// Read in bitmap information structure
 	lInfoSize = bitmapHeader.offset - sizeof(BMPHeader);
-	pBitmapInfo = (BMPInfo *) malloc(sizeof(GLbyte)*lInfoSize);
+	pBitmapInfo = (BMPInfo *) malloc(lInfoSize);
 	if(fread(pBitmapInfo, lInfoSize, 1, pFile) != 1)
 		{
 		free(pBitmapInfo);
