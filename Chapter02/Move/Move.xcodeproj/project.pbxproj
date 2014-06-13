@@ -20,6 +20,8 @@
 		84C1E6311942743700D7FF53 /* MoveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1E6301942743700D7FF53 /* MoveTests.m */; };
 		84C1E6541942759400D7FF53 /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E6461942745200D7FF53 /* libgltoolscpp.a */; };
 		84C1E6561942759C00D7FF53 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E6551942759C00D7FF53 /* OpenGL.framework */; };
+		84C1E87F194A74B500D7FF53 /* MoveView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84C1E87E194A74B500D7FF53 /* MoveView.mm */; };
+		84C1E888194AA3DF00D7FF53 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E887194AA3DF00D7FF53 /* libc++.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,9 @@
 		84C1E63B1942745200D7FF53 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
 		84C1E6471942746300D7FF53 /* Move */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Move; path = ../../../../../../Shared/Code/svn/oglsuperbible5/Src/Chapter02/Move; sourceTree = "<group>"; };
 		84C1E6551942759C00D7FF53 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		84C1E87D194A74B500D7FF53 /* MoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveView.h; sourceTree = "<group>"; };
+		84C1E87E194A74B500D7FF53 /* MoveView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MoveView.mm; sourceTree = "<group>"; };
+		84C1E887194AA3DF00D7FF53 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C1E888194AA3DF00D7FF53 /* libc++.dylib in Frameworks */,
 				84C1E6561942759C00D7FF53 /* OpenGL.framework in Frameworks */,
 				84C1E6071942743700D7FF53 /* Cocoa.framework in Frameworks */,
 				84C1E6541942759400D7FF53 /* libgltoolscpp.a in Frameworks */,
@@ -132,6 +138,7 @@
 		84C1E6051942743700D7FF53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84C1E887194AA3DF00D7FF53 /* libc++.dylib */,
 				84C1E6551942759C00D7FF53 /* OpenGL.framework */,
 				84C1E6061942743700D7FF53 /* Cocoa.framework */,
 				84C1E6251942743700D7FF53 /* XCTest.framework */,
@@ -158,6 +165,8 @@
 				84C1E61B1942743700D7FF53 /* MainMenu.xib */,
 				84C1E61E1942743700D7FF53 /* Images.xcassets */,
 				84C1E60D1942743700D7FF53 /* Supporting Files */,
+				84C1E87D194A74B500D7FF53 /* MoveView.h */,
+				84C1E87E194A74B500D7FF53 /* MoveView.mm */,
 			);
 			path = Move;
 			sourceTree = "<group>";
@@ -331,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C1E87F194A74B500D7FF53 /* MoveView.mm in Sources */,
 				84C1E61A1942743700D7FF53 /* AppDelegate.m in Sources */,
 				84C1E6131942743700D7FF53 /* main.m in Sources */,
 			);
@@ -427,6 +437,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -460,6 +475,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
