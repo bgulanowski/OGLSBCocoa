@@ -45,6 +45,13 @@
 			remoteGlobalIDString = 845847D1193B8EC5008FFE77;
 			remoteInfo = GLToolsTests;
 		};
+		84C1E882194AA3D200D7FF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84584895193C5138008FFE77 /* GLTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C8F7BF193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
 		84C8F7F0193D6B2200911378 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84584895193C5138008FFE77 /* GLTools.xcodeproj */;
@@ -214,6 +221,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				84C1E883194AA3D200D7FF53 /* PBXTargetDependency */,
 			);
 			name = Triangle;
 			productName = Triangle;
@@ -349,6 +357,11 @@
 			isa = PBXTargetDependency;
 			target = 8458485C193C5105008FFE77 /* Triangle */;
 			targetProxy = 84584882193C5105008FFE77 /* PBXContainerItemProxy */;
+		};
+		84C1E883194AA3D200D7FF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gltoolscpp;
+			targetProxy = 84C1E882194AA3D200D7FF53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
