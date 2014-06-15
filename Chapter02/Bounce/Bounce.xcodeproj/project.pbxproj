@@ -18,7 +18,11 @@
 		84C1E8D1194AB55600D7FF53 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E8B0194AB55500D7FF53 /* Cocoa.framework */; };
 		84C1E8D9194AB55600D7FF53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C1E8D7194AB55600D7FF53 /* InfoPlist.strings */; };
 		84C1E8DB194AB55600D7FF53 /* BounceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1E8DA194AB55600D7FF53 /* BounceTests.m */; };
-		84C1E8E6194AB57C00D7FF53 /* BounceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1E8E5194AB57C00D7FF53 /* BounceView.m */; };
+		84C1E8E6194AB57C00D7FF53 /* BounceView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84C1E8E5194AB57C00D7FF53 /* BounceView.mm */; };
+		84C1E976194E459200D7FF53 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E975194E459200D7FF53 /* OpenGL.framework */; };
+		84C1E978194E459700D7FF53 /* libc++abi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E977194E459700D7FF53 /* libc++abi.dylib */; };
+		84C1E97A194E46E900D7FF53 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E979194E46E900D7FF53 /* CoreVideo.framework */; };
+		84C1E97B194E49F500D7FF53 /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E96D194E441900D7FF53 /* libgltoolscpp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +32,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 84C1E8AC194AB55500D7FF53;
 			remoteInfo = Bounce;
+		};
+		84C1E968194E441900D7FF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C1E962194E441900D7FF53 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847BA193B8EC5008FFE77;
+			remoteInfo = GLTools;
+		};
+		84C1E96A194E441900D7FF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C1E962194E441900D7FF53 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847D1193B8EC5008FFE77;
+			remoteInfo = GLToolsTests;
+		};
+		84C1E96C194E441900D7FF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C1E962194E441900D7FF53 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C8F7C0193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
+		84C1E97C194E49FA00D7FF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84C1E962194E441900D7FF53 /* GLTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C8F7BF193D67F400911378;
+			remoteInfo = gltoolscpp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,8 +84,12 @@
 		84C1E8D8194AB55600D7FF53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84C1E8DA194AB55600D7FF53 /* BounceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BounceTests.m; sourceTree = "<group>"; };
 		84C1E8E4194AB57C00D7FF53 /* BounceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BounceView.h; sourceTree = "<group>"; };
-		84C1E8E5194AB57C00D7FF53 /* BounceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BounceView.m; sourceTree = "<group>"; };
+		84C1E8E5194AB57C00D7FF53 /* BounceView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BounceView.mm; sourceTree = "<group>"; };
 		84C1E8E7194AB59100D7FF53 /* Bounce.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bounce.cpp; sourceTree = "<group>"; };
+		84C1E962194E441900D7FF53 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
+		84C1E975194E459200D7FF53 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		84C1E977194E459700D7FF53 /* libc++abi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
+		84C1E979194E46E900D7FF53 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +97,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C1E97B194E49F500D7FF53 /* libgltoolscpp.a in Frameworks */,
+				84C1E97A194E46E900D7FF53 /* CoreVideo.framework in Frameworks */,
+				84C1E978194E459700D7FF53 /* libc++abi.dylib in Frameworks */,
+				84C1E976194E459200D7FF53 /* OpenGL.framework in Frameworks */,
 				84C1E8B1194AB55500D7FF53 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +125,7 @@
 				84C1E8D4194AB55600D7FF53 /* BounceTests */,
 				84C1E8AF194AB55500D7FF53 /* Frameworks */,
 				84C1E8AE194AB55500D7FF53 /* Products */,
+				84C1E962194E441900D7FF53 /* GLTools.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +141,9 @@
 		84C1E8AF194AB55500D7FF53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84C1E979194E46E900D7FF53 /* CoreVideo.framework */,
+				84C1E977194E459700D7FF53 /* libc++abi.dylib */,
+				84C1E975194E459200D7FF53 /* OpenGL.framework */,
 				84C1E8B0194AB55500D7FF53 /* Cocoa.framework */,
 				84C1E8CF194AB55600D7FF53 /* XCTest.framework */,
 				84C1E8B2194AB55500D7FF53 /* Other Frameworks */,
@@ -126,7 +170,7 @@
 				84C1E8C8194AB55500D7FF53 /* Images.xcassets */,
 				84C1E8B7194AB55500D7FF53 /* Supporting Files */,
 				84C1E8E4194AB57C00D7FF53 /* BounceView.h */,
-				84C1E8E5194AB57C00D7FF53 /* BounceView.m */,
+				84C1E8E5194AB57C00D7FF53 /* BounceView.mm */,
 			);
 			path = Bounce;
 			sourceTree = "<group>";
@@ -169,6 +213,16 @@
 			name = original;
 			sourceTree = "<group>";
 		};
+		84C1E963194E441900D7FF53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84C1E969194E441900D7FF53 /* GLTools.framework */,
+				84C1E96B194E441900D7FF53 /* GLToolsTests.xctest */,
+				84C1E96D194E441900D7FF53 /* libgltoolscpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -183,6 +237,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				84C1E97D194E49FA00D7FF53 /* PBXTargetDependency */,
 			);
 			name = Bounce;
 			productName = Bounce;
@@ -232,6 +287,12 @@
 			mainGroup = 84C1E8A4194AB55500D7FF53;
 			productRefGroup = 84C1E8AE194AB55500D7FF53 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84C1E963194E441900D7FF53 /* Products */;
+					ProjectRef = 84C1E962194E441900D7FF53 /* GLTools.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				84C1E8AC194AB55500D7FF53 /* Bounce */,
@@ -239,6 +300,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		84C1E969194E441900D7FF53 /* GLTools.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GLTools.framework;
+			remoteRef = 84C1E968194E441900D7FF53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C1E96B194E441900D7FF53 /* GLToolsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GLToolsTests.xctest;
+			remoteRef = 84C1E96A194E441900D7FF53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C1E96D194E441900D7FF53 /* libgltoolscpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgltoolscpp.a;
+			remoteRef = 84C1E96C194E441900D7FF53 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		84C1E8AB194AB55500D7FF53 /* Resources */ = {
@@ -267,7 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C1E8E6194AB57C00D7FF53 /* BounceView.m in Sources */,
+				84C1E8E6194AB57C00D7FF53 /* BounceView.mm in Sources */,
 				84C1E8C4194AB55500D7FF53 /* AppDelegate.m in Sources */,
 				84C1E8BD194AB55500D7FF53 /* main.m in Sources */,
 			);
@@ -288,6 +373,11 @@
 			isa = PBXTargetDependency;
 			target = 84C1E8AC194AB55500D7FF53 /* Bounce */;
 			targetProxy = 84C1E8D2194AB55600D7FF53 /* PBXContainerItemProxy */;
+		};
+		84C1E97D194E49FA00D7FF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gltoolscpp;
+			targetProxy = 84C1E97C194E49FA00D7FF53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -404,6 +494,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bounce/Bounce-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include,
+				);
 				INFOPLIST_FILE = "Bounce/Bounce-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -417,6 +512,11 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Bounce/Bounce-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include,
+				);
 				INFOPLIST_FILE = "Bounce/Bounce-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -482,6 +582,7 @@
 				84C1E8E0194AB55600D7FF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84C1E8E1194AB55600D7FF53 /* Build configuration list for PBXNativeTarget "BounceTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +591,7 @@
 				84C1E8E3194AB55600D7FF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

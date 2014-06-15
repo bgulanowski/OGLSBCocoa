@@ -8,7 +8,6 @@
 
 #import "MoveView.h"
 
-#import <GLTools.h>
 #import <GLBatch.h>
 #import <GLShaderManager.h>
 
