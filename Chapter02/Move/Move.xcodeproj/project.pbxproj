@@ -83,11 +83,11 @@
 		84C1E62E1942743700D7FF53 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84C1E6301942743700D7FF53 /* MoveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveTests.m; sourceTree = "<group>"; };
 		84C1E63B1942745200D7FF53 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
-		84C1E6471942746300D7FF53 /* Move */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Move; path = ../../../../../../Shared/Code/svn/oglsuperbible5/Src/Chapter02/Move; sourceTree = "<group>"; };
 		84C1E6551942759C00D7FF53 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		84C1E87D194A74B500D7FF53 /* MoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveView.h; sourceTree = "<group>"; };
 		84C1E87E194A74B500D7FF53 /* MoveView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MoveView.mm; sourceTree = "<group>"; };
 		84C1E887194AA3DF00D7FF53 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		84C1E8A3194AB51A00D7FF53 /* Move.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Move.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,9 +117,9 @@
 		84C1E5FA1942743700D7FF53 = {
 			isa = PBXGroup;
 			children = (
+				84C1E8A2194AB50B00D7FF53 /* original */,
 				84C1E60C1942743700D7FF53 /* Move */,
 				84C1E62A1942743700D7FF53 /* MoveTests */,
-				84C1E6471942746300D7FF53 /* Move */,
 				84C1E6051942743700D7FF53 /* Frameworks */,
 				84C1E6041942743700D7FF53 /* Products */,
 				84C1E63B1942745200D7FF53 /* GLTools.xcodeproj */,
@@ -209,6 +209,14 @@
 				84C1E6461942745200D7FF53 /* libgltoolscpp.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		84C1E8A2194AB50B00D7FF53 /* original */ = {
+			isa = PBXGroup;
+			children = (
+				84C1E8A3194AB51A00D7FF53 /* Move.cpp */,
+			);
+			name = original;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

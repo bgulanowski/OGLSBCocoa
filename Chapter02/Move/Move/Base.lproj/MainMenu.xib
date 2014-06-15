@@ -670,16 +670,22 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <openGLView fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" useDoubleBufferingEnabled="YES" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdf-Wt-zEc" customClass="MoveView">
+                    <openGLView useAuxiliaryDepthBufferStencil="NO" useDoubleBufferingEnabled="YES" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vdf-Wt-zEc" customClass="MoveView">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </openGLView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="vdf-Wt-zEc" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="8UH-8Q-c63"/>
+                    <constraint firstAttribute="bottom" secondItem="vdf-Wt-zEc" secondAttribute="bottom" id="Qt6-KC-BJr"/>
+                    <constraint firstAttribute="trailing" secondItem="vdf-Wt-zEc" secondAttribute="trailing" id="WeB-se-ozj"/>
+                    <constraint firstItem="vdf-Wt-zEc" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="qjE-p3-tUg"/>
+                </constraints>
             </view>
         </window>
     </objects>
