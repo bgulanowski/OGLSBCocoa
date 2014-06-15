@@ -81,8 +81,8 @@
 		84584886193C5105008FFE77 /* TriangleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TriangleTests-Info.plist"; sourceTree = "<group>"; };
 		84584888193C5105008FFE77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8458488A193C5105008FFE77 /* TriangleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TriangleTests.m; sourceTree = "<group>"; };
-		84584894193C5129008FFE77 /* Triangle */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Triangle; path = ../../../../../../Shared/Code/svn/oglsuperbible5/Src/Chapter02/Triangle; sourceTree = "<group>"; };
 		84584895193C5138008FFE77 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
+		84C1E89C194AB4E100D7FF53 /* Triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
 		84C8F7B1193D4C6500911378 /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
 		84C8F7B2193D4C6500911378 /* Triangle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Triangle.mm; sourceTree = "<group>"; };
 		84C8F7F3193D6B9F00911378 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
@@ -114,11 +114,11 @@
 		84584854193C5105008FFE77 = {
 			isa = PBXGroup;
 			children = (
+				84C1E89B194AB4D200D7FF53 /* original */,
 				84584866193C5105008FFE77 /* Triangle */,
 				84584884193C5105008FFE77 /* TriangleTests */,
 				8458485F193C5105008FFE77 /* Frameworks */,
 				8458485E193C5105008FFE77 /* Products */,
-				84584894193C5129008FFE77 /* Triangle */,
 				84584895193C5138008FFE77 /* GLTools.xcodeproj */,
 			);
 			sourceTree = "<group>";
@@ -205,6 +205,14 @@
 				84C8F7F1193D6B2200911378 /* libgltoolscpp.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		84C1E89B194AB4D200D7FF53 /* original */ = {
+			isa = PBXGroup;
+			children = (
+				84C1E89C194AB4E100D7FF53 /* Triangle.cpp */,
+			);
+			name = original;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
