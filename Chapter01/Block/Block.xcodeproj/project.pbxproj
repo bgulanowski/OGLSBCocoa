@@ -52,6 +52,13 @@
 			remoteGlobalIDString = 845847B9193B8EC5008FFE77;
 			remoteInfo = GLTools;
 		};
+		84C1E894194AB4AD00D7FF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84584843193BC854008FFE77 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C8F7C0193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -75,9 +82,13 @@
 		8458482E193BC7AE008FFE77 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84584830193BC7AE008FFE77 /* BlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockTests.m; sourceTree = "<group>"; };
 		8458483A193BC7C3008FFE77 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		84584842193BC83F008FFE77 /* Block */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Block; path = ../svn/oglsuperbible5/Src/Chapter01/Block; sourceTree = GITHUB_PUBLIC_ROOT; };
 		84584843193BC854008FFE77 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
 		84584852193BC8FE008FFE77 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		84C1E89D194AB4FC00D7FF53 /* Block.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Block.cpp; sourceTree = "<group>"; };
+		84C1E89E194AB4FC00D7FF53 /* Block4.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Block4.tga; sourceTree = "<group>"; };
+		84C1E89F194AB4FC00D7FF53 /* Block5.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Block5.tga; sourceTree = "<group>"; };
+		84C1E8A0194AB4FC00D7FF53 /* Block6.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Block6.tga; sourceTree = "<group>"; };
+		84C1E8A1194AB4FC00D7FF53 /* floor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = floor.tga; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +118,12 @@
 		845847FA193BC7AE008FFE77 = {
 			isa = PBXGroup;
 			children = (
+				84C1E891194AB4AD00D7FF53 /* original */,
 				84584843193BC854008FFE77 /* GLTools.xcodeproj */,
 				8458480C193BC7AE008FFE77 /* Block */,
 				8458482A193BC7AE008FFE77 /* BlockTests */,
 				84584805193BC7AE008FFE77 /* Frameworks */,
 				84584804193BC7AE008FFE77 /* Products */,
-				84584842193BC83F008FFE77 /* Block */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,8 +205,21 @@
 			children = (
 				84584849193BC854008FFE77 /* GLTools.framework */,
 				8458484B193BC854008FFE77 /* GLToolsTests.xctest */,
+				84C1E895194AB4AD00D7FF53 /* libgltoolscpp.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		84C1E891194AB4AD00D7FF53 /* original */ = {
+			isa = PBXGroup;
+			children = (
+				84C1E89D194AB4FC00D7FF53 /* Block.cpp */,
+				84C1E89E194AB4FC00D7FF53 /* Block4.tga */,
+				84C1E89F194AB4FC00D7FF53 /* Block5.tga */,
+				84C1E8A0194AB4FC00D7FF53 /* Block6.tga */,
+				84C1E8A1194AB4FC00D7FF53 /* floor.tga */,
+			);
+			name = original;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +313,13 @@
 			fileType = wrapper.cfbundle;
 			path = GLToolsTests.xctest;
 			remoteRef = 8458484A193BC854008FFE77 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84C1E895194AB4AD00D7FF53 /* libgltoolscpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgltoolscpp.a;
+			remoteRef = 84C1E894194AB4AD00D7FF53 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
