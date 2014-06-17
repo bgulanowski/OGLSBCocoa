@@ -130,8 +130,8 @@ inline void LITTLE_ENDIAN_DWORD(void *pWord)
 #else
 
 // Define them away on little endian systems
-#define LITTLE_ENDIAN_WORD 
-#define LITTLE_ENDIAN_DWORD 
+#define LITTLE_ENDIAN_WORD(_)
+#define LITTLE_ENDIAN_DWORD(_)
 #endif
 
 
@@ -151,7 +151,7 @@ void gltSetWorkingDirectory(const char *szArgv);
 ///////////////////////////////////////////////////////////////////////////////
 GLbyte* gltReadBMPBits(const char *szFileName, int *nWidth, int *nHeight);
 
-#if 0
+#if 1
 /////////////////////////////////////////////////////////////////////////////////////
 // Load a .TGA file
 GLbyte *gltReadTGABits(const char *szFileName, GLint *iWidth, GLint *iHeight, GLint *iComponents, GLenum *eFormat, GLbyte *pData = NULL);

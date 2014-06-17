@@ -795,7 +795,7 @@ typedef struct
 // glFinish for single buffered contexts before calling this function.
 // Returns 0 if an error occurs, or 1 on success.
 // Does not work on the iPhone
-#if 0
+#if 1
 #ifndef OPENGL_ES
 GLint gltGrabScreenTGA(const char *szFileName)
 	{
@@ -963,8 +963,10 @@ GLbyte *gltReadTGABits(const char *szFileName, GLint *iWidth, GLint *iHeight, GL
             *iComponents = GL_RGBA;
             break;
         case 1:
-            *eFormat = GL_LUMINANCE;
-            *iComponents = GL_LUMINANCE;
+//            *eFormat = GL_LUMINANCE;
+//            *iComponents = GL_LUMINANCE;
+				*eFormat = -1;
+				*iComponents = -1;
             break;
         default:        // RGB
             // If on the iPhone, TGA's are BGR, and the iPhone does not 

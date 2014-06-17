@@ -19,8 +19,13 @@
 		8458482F193BC7AE008FFE77 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8458482D193BC7AE008FFE77 /* InfoPlist.strings */; };
 		84584831193BC7AE008FFE77 /* BlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84584830193BC7AE008FFE77 /* BlockTests.m */; };
 		8458483B193BC7C3008FFE77 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8458483A193BC7C3008FFE77 /* OpenGL.framework */; };
-		84584851193BC87F008FFE77 /* GLTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84584849193BC854008FFE77 /* GLTools.framework */; };
 		84584853193BC8FE008FFE77 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84584852193BC8FE008FFE77 /* GLKit.framework */; };
+		84C1E981194F28E800D7FF53 /* BlockView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84C1E980194F28E800D7FF53 /* BlockView.mm */; };
+		84C1E9841950A81000D7FF53 /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C1E895194AB4AD00D7FF53 /* libgltoolscpp.a */; };
+		84C1E9871950AC7000D7FF53 /* Block4.tga in Resources */ = {isa = PBXBuildFile; fileRef = 84C1E89E194AB4FC00D7FF53 /* Block4.tga */; };
+		84C1E9881950AC7000D7FF53 /* Block5.tga in Resources */ = {isa = PBXBuildFile; fileRef = 84C1E89F194AB4FC00D7FF53 /* Block5.tga */; };
+		84C1E9891950AC7000D7FF53 /* Block6.tga in Resources */ = {isa = PBXBuildFile; fileRef = 84C1E8A0194AB4FC00D7FF53 /* Block6.tga */; };
+		84C1E98A1950AC7000D7FF53 /* floor.tga in Resources */ = {isa = PBXBuildFile; fileRef = 84C1E8A1194AB4FC00D7FF53 /* floor.tga */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,18 +50,18 @@
 			remoteGlobalIDString = 845847D1193B8EC5008FFE77;
 			remoteInfo = GLToolsTests;
 		};
-		8458484F193BC87A008FFE77 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84584843193BC854008FFE77 /* GLTools.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 845847B9193B8EC5008FFE77;
-			remoteInfo = GLTools;
-		};
 		84C1E894194AB4AD00D7FF53 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84584843193BC854008FFE77 /* GLTools.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 84C8F7C0193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
+		84C1E9851950A81700D7FF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84584843193BC854008FFE77 /* GLTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C8F7BF193D67F400911378;
 			remoteInfo = gltoolscpp;
 		};
 /* End PBXContainerItemProxy section */
@@ -89,6 +94,8 @@
 		84C1E89F194AB4FC00D7FF53 /* Block5.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Block5.tga; sourceTree = "<group>"; };
 		84C1E8A0194AB4FC00D7FF53 /* Block6.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = Block6.tga; sourceTree = "<group>"; };
 		84C1E8A1194AB4FC00D7FF53 /* floor.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = floor.tga; sourceTree = "<group>"; };
+		84C1E97F194F28E800D7FF53 /* BlockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockView.h; sourceTree = "<group>"; };
+		84C1E980194F28E800D7FF53 /* BlockView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlockView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +103,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C1E9841950A81000D7FF53 /* libgltoolscpp.a in Frameworks */,
 				84584853193BC8FE008FFE77 /* GLKit.framework in Frameworks */,
-				84584851193BC87F008FFE77 /* GLTools.framework in Frameworks */,
 				8458483B193BC7C3008FFE77 /* OpenGL.framework in Frameworks */,
 				84584807193BC7AE008FFE77 /* Cocoa.framework in Frameworks */,
 			);
@@ -119,11 +126,11 @@
 			isa = PBXGroup;
 			children = (
 				84C1E891194AB4AD00D7FF53 /* original */,
-				84584843193BC854008FFE77 /* GLTools.xcodeproj */,
 				8458480C193BC7AE008FFE77 /* Block */,
 				8458482A193BC7AE008FFE77 /* BlockTests */,
 				84584805193BC7AE008FFE77 /* Frameworks */,
 				84584804193BC7AE008FFE77 /* Products */,
+				84584843193BC854008FFE77 /* GLTools.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +173,8 @@
 				8458481B193BC7AE008FFE77 /* MainMenu.xib */,
 				8458481E193BC7AE008FFE77 /* Images.xcassets */,
 				8458480D193BC7AE008FFE77 /* Supporting Files */,
+				84C1E97F194F28E800D7FF53 /* BlockView.h */,
+				84C1E980194F28E800D7FF53 /* BlockView.mm */,
 			);
 			path = Block;
 			sourceTree = "<group>";
@@ -236,7 +245,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				84584850193BC87A008FFE77 /* PBXTargetDependency */,
+				84C1E9861950A81700D7FF53 /* PBXTargetDependency */,
 			);
 			name = Block;
 			productName = Block;
@@ -330,7 +339,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				84584811193BC7AE008FFE77 /* InfoPlist.strings in Resources */,
+				84C1E9891950AC7000D7FF53 /* Block6.tga in Resources */,
 				8458481F193BC7AE008FFE77 /* Images.xcassets in Resources */,
+				84C1E9881950AC7000D7FF53 /* Block5.tga in Resources */,
+				84C1E9871950AC7000D7FF53 /* Block4.tga in Resources */,
+				84C1E98A1950AC7000D7FF53 /* floor.tga in Resources */,
 				84584817193BC7AE008FFE77 /* Credits.rtf in Resources */,
 				8458481D193BC7AE008FFE77 /* MainMenu.xib in Resources */,
 			);
@@ -351,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C1E981194F28E800D7FF53 /* BlockView.mm in Sources */,
 				8458481A193BC7AE008FFE77 /* AppDelegate.m in Sources */,
 				84584813193BC7AE008FFE77 /* main.m in Sources */,
 			);
@@ -372,10 +386,10 @@
 			target = 84584802193BC7AE008FFE77 /* Block */;
 			targetProxy = 84584828193BC7AE008FFE77 /* PBXContainerItemProxy */;
 		};
-		84584850193BC87A008FFE77 /* PBXTargetDependency */ = {
+		84C1E9861950A81700D7FF53 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = GLTools;
-			targetProxy = 8458484F193BC87A008FFE77 /* PBXContainerItemProxy */;
+			name = gltoolscpp;
+			targetProxy = 84C1E9851950A81700D7FF53 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -447,6 +461,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../GLTools/cpp/include",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -480,6 +499,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../../GLTools/cpp/include",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
