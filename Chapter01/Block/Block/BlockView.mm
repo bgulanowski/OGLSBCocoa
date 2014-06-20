@@ -72,41 +72,49 @@ GLfloat vLightPos[] = { -8.0f, 20.0f, 100.0f, 1.0f };
 }
 
 - (void)setup {
-	
+
 	[[self openGLContext] makeCurrentContext];
 	
-    GLbyte *pBytes;
-    GLint nWidth, nHeight, nComponents;
-    GLenum format;
+	GLuint test[10];
+	glGenVertexArrays(10, test);
+	glDeleteVertexArrays(10, test);
 	
-	_shaderManager = new GLShaderManager();
-	_cameraFrame = new GLFrame();
 	_viewFrustum = new GLFrustum();
-	_cubeBatch = new GLBatch();
-	_floorBatch = new GLBatch();
-	_topBlock = new GLBatch();
-	_frontBlock = new GLBatch();
-	_leftBlock = new GLBatch();
 	
+	// Prepare shader manager
+	_shaderManager = new GLShaderManager();
 	_shaderManager->InitializeStockShaders();
 	
-	// Black background
 	glClearColor(0.0f, 0.0f, 0.0f, 1.0f );
 	glEnable(GL_DEPTH_TEST);
-	glLineWidth(2.5f);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
 	
 	_transformPipeline.SetMatrixStacks(_modelViewMatrix, _projectionMatrix);
 	
+	// Prepare camera frame
+	_cameraFrame = new GLFrame();
 	_cameraFrame->MoveForward(-15.0f);
 	_cameraFrame->MoveUp(6.0f);
 	_cameraFrame->RotateLocalX(float(m3dDegToRad(20.0f)));
 	
-	[self makeCube];
-	[self makeFloor];
+	// Create shadow projection matrix
+	GLfloat floorPlane[] = { 0.0f, 1.0f, 0.0f, 1.0f};
+	m3dMakePlanarShadowMatrix(_shadowMatrix, floorPlane, vLightPos);
 	
-	// Make top
+	[self loadTextures];
+
+	[self makeFloor];
+	[self makeCube];
+	
+	[self makeTop];
+	[self makeFront];
+	[self makeLeft];
+}
+
+- (void)makeTop {
+
+	_topBlock = new GLBatch();
 	_topBlock->Begin(GL_TRIANGLE_FAN, 4, 1);
 	_topBlock->Normal3f(0.0f, 1.0f, 0.0f);
 	_topBlock->MultiTexCoord2f(0, 0.0f, 0.0f);
@@ -124,8 +132,10 @@ GLfloat vLightPos[] = { -8.0f, 20.0f, 100.0f, 1.0f };
 	_topBlock->MultiTexCoord2f(0, 0.0f, 1.0f);
 	_topBlock->Vertex3f(-1.0f, 1.0f, -1.0f);
 	_topBlock->End();
-	
-	// Make Front
+}
+
+- (void)makeFront {
+	_frontBlock = new GLBatch();
 	_frontBlock->Begin(GL_TRIANGLE_FAN, 4, 1);
 	_frontBlock->Normal3f(0.0f, 0.0f, 1.0f);
 	_frontBlock->MultiTexCoord2f(0, 0.0f, 0.0f);
@@ -143,8 +153,10 @@ GLfloat vLightPos[] = { -8.0f, 20.0f, 100.0f, 1.0f };
 	_frontBlock->MultiTexCoord2f(0, 0.0f, 1.0f);
 	_frontBlock->Vertex3f(-1.0f, 1.0f, 1.0f);
 	_frontBlock->End();
-	
-	// Make left
+}
+
+- (void)makeLeft {
+	_leftBlock = new GLBatch();
 	_leftBlock->Begin(GL_TRIANGLE_FAN, 4, 1);
 	_leftBlock->Normal3f(-1.0f, 0.0f, 0.0f);
 	_leftBlock->MultiTexCoord2f(0, 0.0f, 0.0f);
@@ -162,10 +174,13 @@ GLfloat vLightPos[] = { -8.0f, 20.0f, 100.0f, 1.0f };
 	_leftBlock->MultiTexCoord2f(0, 0.0f, 1.0f);
 	_leftBlock->Vertex3f(-1.0f, 1.0f, -1.0f);
 	_leftBlock->End();
+}
+
+- (void)loadTextures {
 	
-	// Create shadow projection matrix
-	GLfloat floorPlane[] = { 0.0f, 1.0f, 0.0f, 1.0f};
-	m3dMakePlanarShadowMatrix(_shadowMatrix, floorPlane, vLightPos);
+    GLbyte *pBytes;
+    GLint nWidth, nHeight, nComponents;
+    GLenum format;
 	
 	// Load up four textures
 	glGenTextures(4, _textures);
@@ -222,6 +237,8 @@ GLfloat vLightPos[] = { -8.0f, 20.0f, 100.0f, 1.0f };
 
 - (void)makeCube {
 	
+	_cubeBatch = new GLBatch();
+
 	_cubeBatch->Begin(GL_TRIANGLES, 36, 1);
 	
 	/////////////////////////////////////////////
@@ -249,7 +266,6 @@ GLfloat vLightPos[] = { -8.0f, 20.0f, 100.0f, 1.0f };
 	_cubeBatch->Normal3f(0.0f, 1.0f, 0.0f);
 	_cubeBatch->MultiTexCoord2f(0, 0.0f, 1.0f);
 	_cubeBatch->Vertex3f(-1.0f, 1.0f, 1.0f);
-	
 	
 	////////////////////////////////////////////
 	// Bottom of cube
@@ -387,6 +403,8 @@ GLfloat vLightPos[] = { -8.0f, 20.0f, 100.0f, 1.0f };
 	GLfloat x = 5.0f;
     GLfloat y = -1.0f;
 	
+	_floorBatch = new GLBatch();
+
 	_floorBatch->Begin(GL_TRIANGLE_FAN, 4, 1);
 	_floorBatch->MultiTexCoord2f(0, 0.0f, 0.0f);
 	_floorBatch->Vertex3f(-x, y, x);
@@ -442,6 +460,8 @@ GLfloat vLightPos[] = { -8.0f, 20.0f, 100.0f, 1.0f };
 	}
 	
 	_modelViewMatrix.PopMatrix();
+	
+	[[self openGLContext] flushBuffer];
 }
 
 - (void)renderFloor {
@@ -583,8 +603,6 @@ GLfloat vLightPos[] = { -8.0f, 20.0f, 100.0f, 1.0f };
 	glDisable(GL_BLEND);
 	glDisable(GL_LINE_SMOOTH);
 	glDisable(GL_STENCIL_TEST);
-	
-	[[self openGLContext] flushBuffer];
 }
 
 - (BOOL)acceptsFirstResponder {
@@ -593,7 +611,7 @@ GLfloat vLightPos[] = { -8.0f, 20.0f, 100.0f, 1.0f };
 
 - (void)keyDown:(NSEvent *)theEvent {
 	if ([theEvent keyCode] == kVK_Space) {
-		nStep = (nStep + 1) % 5;
+		nStep = (nStep + 1) % 6;
 		[self setNeedsDisplay:YES];
 	}
 }

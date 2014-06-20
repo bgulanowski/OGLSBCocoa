@@ -51,7 +51,7 @@ ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF S
 // Get the OpenGL version number
 void gltGetOpenGLVersion(GLint &nMajor, GLint &nMinor)
 	{
-    #ifndef OPENGL_ES       
+    #if defined(GL_MAJOR_VERSION)
     glGetIntegerv(GL_MAJOR_VERSION, &nMajor);
     glGetIntegerv(GL_MINOR_VERSION, &nMinor);
     #else
@@ -76,7 +76,7 @@ void gltGetOpenGLVersion(GLint &nMajor, GLint &nMinor)
 // Returns 1 or 0
 int gltIsExtSupported(const char *extension)
 	{
-    #ifndef OPENGL_ES       
+    #if defined(GL_NUM_EXTENSIONS)
     GLint nNumExtensions;
     glGetIntegerv(GL_NUM_EXTENSIONS, &nNumExtensions);
     
@@ -1196,6 +1196,7 @@ GLuint gltLoadShaderTripletWithAttributes(const char *szVertexShader,
     }
 
     // Geometry shader is optional
+#if defined(GL_GEOMETRY_SHADER)
     if (szGeometryShader) {
         hGeometryShader = glCreateShader(GL_GEOMETRY_SHADER);
         if(gltLoadShaderFile(szGeometryShader, hGeometryShader) == false)
@@ -1207,6 +1208,7 @@ GLuint gltLoadShaderTripletWithAttributes(const char *szVertexShader,
             goto failed;
         }
     }
+#endif
 
     // Fragment shader is optional (transform feedback only)
     if (szFragmentShader) {
@@ -1476,11 +1478,14 @@ GLuint gltLoadShaderTripletSrc(const char *szVertexSrc,
     hVertexShader = glCreateShader(GL_VERTEX_SHADER);
     gltLoadShaderSrc(szVertexSrc, hVertexShader);
     glCompileShader(hVertexShader);
+#if defined(GL_GEOMETRY_SHADER)
     if (szGeometrySrc) {
         hGeometryShader = glCreateShader(GL_GEOMETRY_SHADER);
         gltLoadShaderSrc(szGeometrySrc, hFragmentShader);
         glCompileShader(hGeometryShader);
     }
+#endif
+	
     hFragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
     gltLoadShaderSrc(szFragmentSrc, hFragmentShader);
     glCompileShader(hFragmentShader);
@@ -1604,8 +1609,8 @@ GLuint gltLoadShaderPairSrc(const char *szVertexSrc, const char *szFragmentSrc)
 GLuint gltLoadShaderPairSrcWithAttributes(const char *szVertexSrc, const char *szFragmentSrc, ...)
 	{
     // Temporary Shader objects
-    GLuint hVertexShader;
-    GLuint hFragmentShader; 
+    GLuint hVertexShader = 0;
+    GLuint hFragmentShader = 0;
     GLuint hReturn = 0;   
     GLint testVal;
 	
@@ -1623,18 +1628,22 @@ GLuint gltLoadShaderPairSrcWithAttributes(const char *szVertexSrc, const char *s
     
     // Check for errors
     glGetShaderiv(hVertexShader, GL_COMPILE_STATUS, &testVal);
-    if(testVal == GL_FALSE)
+    if(testVal == GL_TRUE)
 		{
-        glDeleteShader(hVertexShader);
-        glDeleteShader(hFragmentShader);
-        return (GLuint)NULL;
+			glGetShaderiv(hFragmentShader, GL_COMPILE_STATUS, &testVal);
+//        glDeleteShader(hVertexShader);
+//        glDeleteShader(hFragmentShader);
+//        return (GLuint)NULL;
 		}
     
-    glGetShaderiv(hFragmentShader, GL_COMPILE_STATUS, &testVal);
+//    glGetShaderiv(hFragmentShader, GL_COMPILE_STATUS, &testVal);
     if(testVal == GL_FALSE)
 		{
-        glDeleteShader(hVertexShader);
-        glDeleteShader(hFragmentShader);
+//        glDeleteShader(hVertexShader);
+//        glDeleteShader(hFragmentShader);
+			char infoLog[1024];
+			glGetShaderInfoLog(hVertexShader, 1024, NULL, infoLog);
+			printf("%s", infoLog);
         return (GLuint)NULL;
 		}
     
@@ -1730,12 +1739,14 @@ bool gltCheckErrors(GLuint progName)
 			// Make sure the number of samples for each 
 			// attachment is the same 
             fprintf(stderr, "GL_FRAMEBUFFER_INCOMPLETE_MULTISAMPLE\n");
-			break; 
+			break;
+#if defined(GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS)
 		case GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS:
 			// Make sure the number of layers for each 
 			// attachment is the same 
             fprintf(stderr, "GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS\n");
 			break;
+#endif
 		}
 	}
 
