@@ -11,29 +11,14 @@
 #include <GLTools.h>
 #include <GLShaderManager.h>
 
-// heap objects
-
-GLBatch	triangleBatch;
-GLShaderManager	shaderManager;
-
-
-@implementation Triangle
-
-- (instancetype)initWithFrame:(NSRect)frameRect pixelFormat:(NSOpenGLPixelFormat *)format {
-	self = [super initWithFrame:frameRect pixelFormat:format];
-	if (self) {
-		[self setup];
-	}
-	return self;
+@implementation Triangle {
+	GLBatch	*_triangleBatch;
+	GLShaderManager	*_shaderManager;
 }
 
-- (instancetype)initWithCoder:(NSCoder *)coder {
-	self = [super initWithCoder:coder];
-	if (self) {
-		[self.openGLContext makeCurrentContext];
-		[self setup];
-	}
-	return self;
+- (void)dealloc {
+	delete _triangleBatch;
+	delete _shaderManager;
 }
 
 - (void)setup {
@@ -41,16 +26,18 @@ GLShaderManager	shaderManager;
 	// Blue background
 	glClearColor(0.0f, 0.0f, 1.0f, 1.0f );
 	
-	shaderManager.InitializeStockShaders();
+	_shaderManager = new GLShaderManager();
+	_shaderManager->InitializeStockShaders();
 	
 	// Load up a triangle
 	GLfloat vVerts[] = { -0.5f, 0.0f, 0.0f,
 		0.5f, 0.0f, 0.0f,
 		0.0f, 0.5f, 0.0f };
 	
-	triangleBatch.Begin(GL_TRIANGLES, 3);
-	triangleBatch.CopyVertexData3f(vVerts);
-	triangleBatch.End();
+	_triangleBatch = new GLBatch();
+	_triangleBatch->Begin(GL_TRIANGLES, 3);
+	_triangleBatch->CopyVertexData3f(vVerts);
+	_triangleBatch->End();
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
@@ -59,8 +46,8 @@ GLShaderManager	shaderManager;
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 	
 	GLfloat vRed[] = { 1.0f, 0.0f, 0.0f, 1.0f };
-	shaderManager.UseStockShader(GLT_SHADER_IDENTITY, vRed);
-	triangleBatch.Draw();
+	_shaderManager->UseStockShader(GLT_SHADER_IDENTITY, vRed);
+	_triangleBatch->Draw();
 	
 	[self.openGLContext flushBuffer];
 }

@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Lichen Labs. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "OGLSBView.h"
 
-@interface Triangle : NSOpenGLView
+@interface Triangle : OGLSBView
 
 @end

@@ -670,15 +670,21 @@
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1418"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <openGLView fixedFrame="YES" useAuxiliaryDepthBufferStencil="NO" useDoubleBufferingEnabled="YES" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N7v-VV-6SB" customClass="Triangle">
+                    <openGLView useAuxiliaryDepthBufferStencil="NO" useDoubleBufferingEnabled="YES" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N7v-VV-6SB" customClass="Triangle">
                         <rect key="frame" x="-11" y="0.0" width="491" height="360"/>
                     </openGLView>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="N7v-VV-6SB" secondAttribute="trailing" id="Gf4-XZ-h32"/>
+                    <constraint firstAttribute="bottom" secondItem="N7v-VV-6SB" secondAttribute="bottom" id="LeN-kb-lj9"/>
+                    <constraint firstItem="N7v-VV-6SB" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="dfv-Um-gCc"/>
+                    <constraint firstItem="N7v-VV-6SB" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="-11" id="jhF-iG-19m"/>
+                </constraints>
             </view>
         </window>
     </objects>
