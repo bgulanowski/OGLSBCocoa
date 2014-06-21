@@ -303,12 +303,34 @@ static GLfloat vBlack[] = { 0.0f, 0.0f, 0.0f, 1.0f };
 		titles = @[ @"GL_POINTS", @"GL_LINES", @"GL_LINE_STRIP", @"GL_LINE_LOOP", @"GL_TRIANGLES", @"GL_TRIANGLE_STRIP", @"GL_TRIANGLE_FAN"];
 	}
 	
-	if ([theEvent keyCode] == kVK_Space) {
-		_nStep = (_nStep + 1) % 7;
-		[self setNeedsDisplay:YES];
+	switch ([theEvent keyCode]) {
+		case kVK_Space:
+			_nStep = (_nStep + 1) % 7;
+			[[self window] setTitle:titles[_nStep]];
+			break;
+			
+		case kVK_UpArrow:
+			_objectFrame->RotateWorld(m3dDegToRad(-5.0f), 1.0f, 0.0f, 0.0f);
+			break;
+			
+		case kVK_DownArrow:
+			_objectFrame->RotateWorld(m3dDegToRad(5.0f), 1.0f, 0.0f, 0.0f);
+			break;
+			
+		case kVK_LeftArrow:
+			_objectFrame->RotateWorld(m3dDegToRad(-5.0f), 0.0f, 1.0f, 0.0f);
+			break;
+			
+		case kVK_RightArrow:
+			_objectFrame->RotateWorld(m3dDegToRad(5.0f), 0.0f, 1.0f, 0.0f);
+			break;
+			
+		default:
+			return;
+			break;
 	}
 
-	[[self window] setTitle:titles[_nStep]];
+	[self setNeedsDisplay:YES];
 }
 
 @end
