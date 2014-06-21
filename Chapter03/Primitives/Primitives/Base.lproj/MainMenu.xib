@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5023"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6154.17"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -666,15 +666,27 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="Primitives" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+        <window title="Primitives" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="335" y="390" width="480" height="360"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" id="EiT-Mj-1SZ">
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <openGLView depthSize="32bit" useAuxiliaryDepthBufferStencil="NO" useDoubleBufferingEnabled="YES" allowOffline="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K72-h5-JmI" customClass="PrimitivesView">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
+                    </openGLView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="K72-h5-JmI" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="3RP-hZ-CpE"/>
+                    <constraint firstItem="K72-h5-JmI" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="K0O-N4-2A3"/>
+                    <constraint firstAttribute="bottom" secondItem="K72-h5-JmI" secondAttribute="bottom" id="LMc-Wa-oBq"/>
+                    <constraint firstAttribute="trailing" secondItem="K72-h5-JmI" secondAttribute="trailing" id="elz-SN-1dX"/>
+                </constraints>
             </view>
+            <point key="canvasLocation" x="394" y="131"/>
         </window>
     </objects>
 </document>

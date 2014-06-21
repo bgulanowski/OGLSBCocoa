@@ -41,11 +41,12 @@
 }
 
 - (void)drawRect:(NSRect)dirtyRect {
-	
+
+	static GLfloat vRed[] = { 1.0f, 0.0f, 0.0f, 1.0f };
+
 	// Clear the window with current clearing color
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 	
-	GLfloat vRed[] = { 1.0f, 0.0f, 0.0f, 1.0f };
 	_shaderManager->UseStockShader(GLT_SHADER_IDENTITY, vRed);
 	_triangleBatch->Draw();
 	

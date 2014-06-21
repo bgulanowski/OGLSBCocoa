@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		849B85501956177E002FC87E /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849B854D1956176A002FC87E /* libgltoolscpp.a */; };
+		849B85521956177E002FC87E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849B85511956177E002FC87E /* OpenGL.framework */; };
 		84C02682195467A8000FAB0F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C02681195467A8000FAB0F /* Cocoa.framework */; };
 		84C0268C195467A9000FAB0F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84C0268A195467A9000FAB0F /* InfoPlist.strings */; };
 		84C0268E195467A9000FAB0F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C0268D195467A9000FAB0F /* main.m */; };
@@ -23,6 +25,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		849B85481956176A002FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849B85421956176A002FC87E /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847BA193B8EC5008FFE77;
+			remoteInfo = GLTools;
+		};
+		849B854A1956176A002FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849B85421956176A002FC87E /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847D1193B8EC5008FFE77;
+			remoteInfo = GLToolsTests;
+		};
+		849B854C1956176A002FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849B85421956176A002FC87E /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C8F7C0193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
+		849B854E19561774002FC87E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849B85421956176A002FC87E /* GLTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C8F7BF193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
 		84C026A3195467A9000FAB0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84C02676195467A8000FAB0F /* Project object */;
@@ -33,6 +63,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		849B85421956176A002FC87E /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = /Users/brent/Dev/unhosted/OGLSBCocoa/Chapter01/Block/../../GLTools/GLTools.xcodeproj; sourceTree = "<absolute>"; };
+		849B85511956177E002FC87E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		84C0267E195467A8000FAB0F /* Primitives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Primitives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C02681195467A8000FAB0F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		84C02684195467A9000FAB0F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -65,6 +97,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84C02682195467A8000FAB0F /* Cocoa.framework in Frameworks */,
+				849B85521956177E002FC87E /* OpenGL.framework in Frameworks */,
+				849B85501956177E002FC87E /* libgltoolscpp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,9 +114,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		849B85431956176A002FC87E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849B85491956176A002FC87E /* GLTools.framework */,
+				849B854B1956176A002FC87E /* GLToolsTests.xctest */,
+				849B854D1956176A002FC87E /* libgltoolscpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		84C02675195467A8000FAB0F = {
 			isa = PBXGroup;
 			children = (
+				849B85421956176A002FC87E /* GLTools.xcodeproj */,
 				84C026BD1955FC3A000FAB0F /* Shared */,
 				84C026B5195467E8000FAB0F /* original */,
 				84C02687195467A9000FAB0F /* Primitives */,
@@ -104,6 +149,7 @@
 		84C02680195467A8000FAB0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				849B85511956177E002FC87E /* OpenGL.framework */,
 				84C02681195467A8000FAB0F /* Cocoa.framework */,
 				84C026A0195467A9000FAB0F /* XCTest.framework */,
 				84C02683195467A8000FAB0F /* Other Frameworks */,
@@ -197,6 +243,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				849B854F19561774002FC87E /* PBXTargetDependency */,
 			);
 			name = Primitives;
 			productName = Primitives;
@@ -246,6 +293,12 @@
 			mainGroup = 84C02675195467A8000FAB0F;
 			productRefGroup = 84C0267F195467A8000FAB0F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 849B85431956176A002FC87E /* Products */;
+					ProjectRef = 849B85421956176A002FC87E /* GLTools.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				84C0267D195467A8000FAB0F /* Primitives */,
@@ -253,6 +306,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		849B85491956176A002FC87E /* GLTools.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GLTools.framework;
+			remoteRef = 849B85481956176A002FC87E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		849B854B1956176A002FC87E /* GLToolsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GLToolsTests.xctest;
+			remoteRef = 849B854A1956176A002FC87E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		849B854D1956176A002FC87E /* libgltoolscpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgltoolscpp.a;
+			remoteRef = 849B854C1956176A002FC87E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		84C0267C195467A8000FAB0F /* Resources */ = {
@@ -299,6 +376,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		849B854F19561774002FC87E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gltoolscpp;
+			targetProxy = 849B854E19561774002FC87E /* PBXContainerItemProxy */;
+		};
 		84C026A4195467A9000FAB0F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 84C0267D195467A8000FAB0F /* Primitives */;

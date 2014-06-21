@@ -32,6 +32,10 @@
 
 }
 
+- (BOOL)acceptsFirstResponder {
+	return YES;
+}
+
 - (void)reshape {
 	CGRect bounds = [self bounds];
 	[[self openGLContext] makeCurrentContext];

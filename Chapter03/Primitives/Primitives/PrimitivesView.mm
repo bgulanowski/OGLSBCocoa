@@ -8,12 +8,14 @@
 
 #import "PrimitivesView.h"
 
-#include <GLTools.h>
-#include <GLMatrixStack.h>
-#include <GLFrame.h>
-#include <GLFrustum.h>
-#include <GLBatch.h>
-#include <GLGeometryTransform.h>
+#import <GLTools.h>
+#import <GLMatrixStack.h>
+#import <GLFrame.h>
+#import <GLFrustum.h>
+#import <GLBatch.h>
+#import <GLGeometryTransform.h>
+
+#import <Carbon/Carbon.h>
 
 static GLfloat vGreen[] = { 0.0f, 1.0f, 0.0f, 1.0f };
 static GLfloat vBlack[] = { 0.0f, 0.0f, 0.0f, 1.0f };
@@ -41,17 +43,44 @@ static GLfloat vBlack[] = { 0.0f, 0.0f, 0.0f, 1.0f };
 	int _nStep;
 }
 
+- (void)dealloc {
+	delete _shaderManager;
+	delete _modelViewMatrix;
+	delete _projectionMatrix;
+	delete _cameraFrame;
+	delete _objectFrame;
+	delete _viewFrustum;
+	
+	delete _pointBatch;
+	delete _lineBatch;
+	delete _lineStripBatch;
+	delete _lineLoopBatch;
+	delete _triangleBatch;
+	delete _triangleFanBatch;
+	delete _triangleStripBatch;
+	
+	delete _transformPipeline;
+}
+
 - (void)setup {
 	
 	glClearColor(0.7f, 0.7f, 0.7f, 1.0f );
 	
+	_modelViewMatrix = new GLMatrixStack();
+	_projectionMatrix = new GLMatrixStack();
+	_viewFrustum = new GLFrustum();
+	
+	_shaderManager = new GLShaderManager();
 	_shaderManager->InitializeStockShaders();
 	
 	glEnable(GL_DEPTH_TEST);
 	
+	_transformPipeline = new GLGeometryTransform();
 	_transformPipeline->SetMatrixStacks(*_modelViewMatrix, *_projectionMatrix);
 	
+	_cameraFrame = new GLFrame();
 	_cameraFrame->MoveForward(-15.0f);
+	_objectFrame = new GLFrame();
 	
 	//////////////////////////////////////////////////////////////////////
 	// Some points, more or less in the shape of Florida
@@ -69,21 +98,25 @@ static GLfloat vBlack[] = { 0.0f, 0.0f, 0.0f, 1.0f };
 		{2.40, 1.0, 0.0 },   {2.80, 1.0, 0.0 }};
 	
 	// Load point batch
+	_pointBatch = new GLBatch();
 	_pointBatch->Begin(GL_POINTS, 24);
 	_pointBatch->CopyVertexData3f(vCoast);
 	_pointBatch->End();
 	
 	// Load as a bunch of line segments
+	_lineBatch = new GLBatch();
 	_lineBatch->Begin(GL_LINES, 24);
 	_lineBatch->CopyVertexData3f(vCoast);
 	_lineBatch->End();
 	
 	// Load as a single line segment
+	_lineStripBatch = new GLBatch();
 	_lineStripBatch->Begin(GL_LINE_STRIP, 24);
 	_lineStripBatch->CopyVertexData3f(vCoast);
 	_lineStripBatch->End();
 	
 	// Single line, connect first and last points
+	_lineLoopBatch = new GLBatch();
 	_lineLoopBatch->Begin(GL_LINE_LOOP, 24);
 	_lineLoopBatch->CopyVertexData3f(vCoast);
 	_lineLoopBatch->End();
@@ -105,6 +138,7 @@ static GLfloat vBlack[] = { 0.0f, 0.0f, 0.0f, 1.0f };
 		-2.0f, 0.0f, -2.0f,
 		0.0f, 4.0f, 0.0f};
 	
+	_triangleBatch = new GLBatch();
 	_triangleBatch->Begin(GL_TRIANGLES, 12);
 	_triangleBatch->CopyVertexData3f(vPyramid);
 	_triangleBatch->End();
@@ -132,6 +166,7 @@ static GLfloat vBlack[] = { 0.0f, 0.0f, 0.0f, 1.0f };
 	vPoints[nVerts][2] = 0.0f;
 	
 	// Load it up
+	_triangleFanBatch = new GLBatch();
 	_triangleFanBatch->Begin(GL_TRIANGLE_FAN, 8);
 	_triangleFanBatch->CopyVertexData3f(vPoints);
 	_triangleFanBatch->End();
@@ -168,6 +203,7 @@ static GLfloat vBlack[] = { 0.0f, 0.0f, 0.0f, 1.0f };
 	iCounter++;
 	
 	// Load the triangle strip
+	_triangleStripBatch = new GLBatch();
 	_triangleStripBatch->Begin(GL_TRIANGLE_STRIP, iCounter);
 	_triangleStripBatch->CopyVertexData3f(vPoints);
 	_triangleStripBatch->End();
@@ -259,6 +295,20 @@ static GLfloat vBlack[] = { 0.0f, 0.0f, 0.0f, 1.0f };
 	_viewFrustum->SetPerspective(35.0f, CGRectGetWidth(bounds) / CGRectGetHeight(bounds), 1.0f, 500.0f);
 	_projectionMatrix->LoadMatrix(_viewFrustum->GetProjectionMatrix());
 	_modelViewMatrix->LoadIdentity();
+}
+
+- (void)keyDown:(NSEvent *)theEvent {
+	static NSArray *titles;
+	if (!titles) {
+		titles = @[ @"GL_POINTS", @"GL_LINES", @"GL_LINE_STRIP", @"GL_LINE_LOOP", @"GL_TRIANGLES", @"GL_TRIANGLE_STRIP", @"GL_TRIANGLE_FAN"];
+	}
+	
+	if ([theEvent keyCode] == kVK_Space) {
+		_nStep = (_nStep + 1) % 7;
+		[self setNeedsDisplay:YES];
+	}
+
+	[[self window] setTitle:titles[_nStep]];
 }
 
 @end
