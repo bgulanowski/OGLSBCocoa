@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 GLSuperBible. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "OGLSBView.h"
 
-@interface PrimitivesView : NSOpenGLView
+@interface PrimitivesView : OGLSBView
 
 @end
