@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8475B59519561D0800E16190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B59419561D0800E16190 /* main.m */; };
+		8475B59819561D0800E16190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B59719561D0800E16190 /* AppDelegate.m */; };
+		8475B59A19561D0800E16190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8475B59919561D0800E16190 /* Images.xcassets */; };
+		8475B59D19561D0800E16190 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8475B59B19561D0800E16190 /* MainMenu.xib */; };
+		8475B5A919561D0800E16190 /* BlendingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B5A819561D0800E16190 /* BlendingTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8475B5A319561D0800E16190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8475B58719561D0800E16190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8475B58E19561D0800E16190;
+			remoteInfo = Blending;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8475B58F19561D0800E16190 /* Blending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blending.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8475B59319561D0800E16190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8475B59419561D0800E16190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8475B59619561D0800E16190 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8475B59719561D0800E16190 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8475B59919561D0800E16190 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8475B59C19561D0800E16190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8475B5A219561D0800E16190 /* BlendingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlendingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8475B5A719561D0800E16190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8475B5A819561D0800E16190 /* BlendingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlendingTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8475B58C19561D0800E16190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8475B59F19561D0800E16190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8475B58619561D0800E16190 = {
+			isa = PBXGroup;
+			children = (
+				8475B59119561D0800E16190 /* Blending */,
+				8475B5A519561D0800E16190 /* BlendingTests */,
+				8475B59019561D0800E16190 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8475B59019561D0800E16190 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8475B58F19561D0800E16190 /* Blending.app */,
+				8475B5A219561D0800E16190 /* BlendingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8475B59119561D0800E16190 /* Blending */ = {
+			isa = PBXGroup;
+			children = (
+				8475B59619561D0800E16190 /* AppDelegate.h */,
+				8475B59719561D0800E16190 /* AppDelegate.m */,
+				8475B59919561D0800E16190 /* Images.xcassets */,
+				8475B59B19561D0800E16190 /* MainMenu.xib */,
+				8475B59219561D0800E16190 /* Supporting Files */,
+			);
+			path = Blending;
+			sourceTree = "<group>";
+		};
+		8475B59219561D0800E16190 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8475B59319561D0800E16190 /* Info.plist */,
+				8475B59419561D0800E16190 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8475B5A519561D0800E16190 /* BlendingTests */ = {
+			isa = PBXGroup;
+			children = (
+				8475B5A819561D0800E16190 /* BlendingTests.m */,
+				8475B5A619561D0800E16190 /* Supporting Files */,
+			);
+			path = BlendingTests;
+			sourceTree = "<group>";
+		};
+		8475B5A619561D0800E16190 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8475B5A719561D0800E16190 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8475B58E19561D0800E16190 /* Blending */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8475B5AC19561D0800E16190 /* Build configuration list for PBXNativeTarget "Blending" */;
+			buildPhases = (
+				8475B58B19561D0800E16190 /* Sources */,
+				8475B58C19561D0800E16190 /* Frameworks */,
+				8475B58D19561D0800E16190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Blending;
+			productName = Blending;
+			productReference = 8475B58F19561D0800E16190 /* Blending.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8475B5A119561D0800E16190 /* BlendingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8475B5AF19561D0800E16190 /* Build configuration list for PBXNativeTarget "BlendingTests" */;
+			buildPhases = (
+				8475B59E19561D0800E16190 /* Sources */,
+				8475B59F19561D0800E16190 /* Frameworks */,
+				8475B5A019561D0800E16190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8475B5A419561D0800E16190 /* PBXTargetDependency */,
+			);
+			name = BlendingTests;
+			productName = BlendingTests;
+			productReference = 8475B5A219561D0800E16190 /* BlendingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8475B58719561D0800E16190 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = GLSuperBible;
+				TargetAttributes = {
+					8475B58E19561D0800E16190 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					8475B5A119561D0800E16190 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 8475B58E19561D0800E16190;
+					};
+				};
+			};
+			buildConfigurationList = 8475B58A19561D0800E16190 /* Build configuration list for PBXProject "Blending" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8475B58619561D0800E16190;
+			productRefGroup = 8475B59019561D0800E16190 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8475B58E19561D0800E16190 /* Blending */,
+				8475B5A119561D0800E16190 /* BlendingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8475B58D19561D0800E16190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8475B59A19561D0800E16190 /* Images.xcassets in Resources */,
+				8475B59D19561D0800E16190 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8475B5A019561D0800E16190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8475B58B19561D0800E16190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8475B59819561D0800E16190 /* AppDelegate.m in Sources */,
+				8475B59519561D0800E16190 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8475B59E19561D0800E16190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8475B5A919561D0800E16190 /* BlendingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8475B5A419561D0800E16190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8475B58E19561D0800E16190 /* Blending */;
+			targetProxy = 8475B5A319561D0800E16190 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8475B59B19561D0800E16190 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8475B59C19561D0800E16190 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8475B5AA19561D0800E16190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8475B5AB19561D0800E16190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8475B5AD19561D0800E16190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Blending/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8475B5AE19561D0800E16190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Blending/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8475B5B019561D0800E16190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Blending.app/Contents/MacOS/Blending";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlendingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		8475B5B119561D0800E16190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Blending.app/Contents/MacOS/Blending";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlendingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8475B58A19561D0800E16190 /* Build configuration list for PBXProject "Blending" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8475B5AA19561D0800E16190 /* Debug */,
+				8475B5AB19561D0800E16190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8475B5AC19561D0800E16190 /* Build configuration list for PBXNativeTarget "Blending" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8475B5AD19561D0800E16190 /* Debug */,
+				8475B5AE19561D0800E16190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8475B5AF19561D0800E16190 /* Build configuration list for PBXNativeTarget "BlendingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8475B5B019561D0800E16190 /* Debug */,
+				8475B5B119561D0800E16190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8475B58719561D0800E16190 /* Project object */;
+}
