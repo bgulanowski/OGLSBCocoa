@@ -7,14 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8444D80A1957EC6F00EE5832 /* OGLSBView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8444D8091957EC6F00EE5832 /* OGLSBView.mm */; };
 		8475B5C119561D2500E16190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B5C019561D2500E16190 /* main.m */; };
 		8475B5C419561D2500E16190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B5C319561D2500E16190 /* AppDelegate.m */; };
 		8475B5C619561D2500E16190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8475B5C519561D2500E16190 /* Images.xcassets */; };
 		8475B5C919561D2500E16190 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8475B5C719561D2500E16190 /* MainMenu.xib */; };
 		8475B5D519561D2500E16190 /* GeoTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B5D419561D2500E16190 /* GeoTestTests.m */; };
+		849A8E821957F288008195C8 /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444D8261957EC8600EE5832 /* libgltoolscpp.a */; };
+		849A8E841957F28D008195C8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849A8E831957F28D008195C8 /* OpenGL.framework */; };
+		849A8E861957F290008195C8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849A8E851957F290008195C8 /* Cocoa.framework */; };
+		849A8E891957F2C1008195C8 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 849A8E881957F2C1008195C8 /* libc++.dylib */; };
+		849A8E8C1957F2DB008195C8 /* GeoTestView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 849A8E8B1957F2DB008195C8 /* GeoTestView.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8444D8211957EC8600EE5832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D81B1957EC8600EE5832 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847BA193B8EC5008FFE77;
+			remoteInfo = GLTools;
+		};
+		8444D8231957EC8600EE5832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D81B1957EC8600EE5832 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847D1193B8EC5008FFE77;
+			remoteInfo = GLToolsTests;
+		};
+		8444D8251957EC8600EE5832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D81B1957EC8600EE5832 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C8F7C0193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
 		8475B5CF19561D2500E16190 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8475B5B319561D2500E16190 /* Project object */;
@@ -22,9 +49,20 @@
 			remoteGlobalIDString = 8475B5BA19561D2500E16190;
 			remoteInfo = GeoTest;
 		};
+		849A8E7D1957F283008195C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D81B1957EC8600EE5832 /* GLTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C8F7BF193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8444D8011957EC3900EE5832 /* GeoTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GeoTest.cpp; path = ../../../../../../Shared/Code/svn/oglsuperbible5/Src/Chapter03/GeoTest/GeoTest.cpp; sourceTree = "<group>"; };
+		8444D8081957EC6F00EE5832 /* OGLSBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSBView.h; sourceTree = "<group>"; };
+		8444D8091957EC6F00EE5832 /* OGLSBView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGLSBView.mm; sourceTree = "<group>"; };
+		8444D81B1957EC8600EE5832 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
 		8475B5BB19561D2500E16190 /* GeoTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8475B5BF19561D2500E16190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8475B5C019561D2500E16190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,6 +73,11 @@
 		8475B5CE19561D2500E16190 /* GeoTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8475B5D319561D2500E16190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8475B5D419561D2500E16190 /* GeoTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoTestTests.m; sourceTree = "<group>"; };
+		849A8E831957F28D008195C8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		849A8E851957F290008195C8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		849A8E881957F2C1008195C8 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		849A8E8A1957F2DB008195C8 /* GeoTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoTestView.h; sourceTree = "<group>"; };
+		849A8E8B1957F2DB008195C8 /* GeoTestView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GeoTestView.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849A8E861957F290008195C8 /* Cocoa.framework in Frameworks */,
+				849A8E841957F28D008195C8 /* OpenGL.framework in Frameworks */,
+				849A8E891957F2C1008195C8 /* libc++.dylib in Frameworks */,
+				849A8E821957F288008195C8 /* libgltoolscpp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,11 +102,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8444D8071957EC6F00EE5832 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8444D8081957EC6F00EE5832 /* OGLSBView.h */,
+				8444D8091957EC6F00EE5832 /* OGLSBView.mm */,
+			);
+			name = Shared;
+			path = ../../Shared;
+			sourceTree = "<group>";
+		};
+		8444D81C1957EC8600EE5832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8444D8221957EC8600EE5832 /* GLTools.framework */,
+				8444D8241957EC8600EE5832 /* GLToolsTests.xctest */,
+				8444D8261957EC8600EE5832 /* libgltoolscpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8475B5B219561D2500E16190 = {
 			isa = PBXGroup;
 			children = (
+				8444D81B1957EC8600EE5832 /* GLTools.xcodeproj */,
+				8444D8011957EC3900EE5832 /* GeoTest.cpp */,
+				8444D8071957EC6F00EE5832 /* Shared */,
 				8475B5BD19561D2500E16190 /* GeoTest */,
 				8475B5D119561D2500E16190 /* GeoTestTests */,
+				849A8E871957F2B5008195C8 /* Frameworks */,
 				8475B5BC19561D2500E16190 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +149,8 @@
 			children = (
 				8475B5C219561D2500E16190 /* AppDelegate.h */,
 				8475B5C319561D2500E16190 /* AppDelegate.m */,
+				849A8E8A1957F2DB008195C8 /* GeoTestView.h */,
+				849A8E8B1957F2DB008195C8 /* GeoTestView.mm */,
 				8475B5C519561D2500E16190 /* Images.xcassets */,
 				8475B5C719561D2500E16190 /* MainMenu.xib */,
 				8475B5BE19561D2500E16190 /* Supporting Files */,
@@ -111,6 +184,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		849A8E871957F2B5008195C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849A8E881957F2C1008195C8 /* libc++.dylib */,
+				849A8E851957F290008195C8 /* Cocoa.framework */,
+				849A8E831957F28D008195C8 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,6 +208,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				849A8E7E1957F283008195C8 /* PBXTargetDependency */,
 			);
 			name = GeoTest;
 			productName = GeoTest;
@@ -178,6 +262,12 @@
 			mainGroup = 8475B5B219561D2500E16190;
 			productRefGroup = 8475B5BC19561D2500E16190 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8444D81C1957EC8600EE5832 /* Products */;
+					ProjectRef = 8444D81B1957EC8600EE5832 /* GLTools.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8475B5BA19561D2500E16190 /* GeoTest */,
@@ -185,6 +275,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8444D8221957EC8600EE5832 /* GLTools.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GLTools.framework;
+			remoteRef = 8444D8211957EC8600EE5832 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8444D8241957EC8600EE5832 /* GLToolsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GLToolsTests.xctest;
+			remoteRef = 8444D8231957EC8600EE5832 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8444D8261957EC8600EE5832 /* libgltoolscpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgltoolscpp.a;
+			remoteRef = 8444D8251957EC8600EE5832 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8475B5B919561D2500E16190 /* Resources */ = {
@@ -211,6 +325,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8475B5C419561D2500E16190 /* AppDelegate.m in Sources */,
+				8444D80A1957EC6F00EE5832 /* OGLSBView.mm in Sources */,
+				849A8E8C1957F2DB008195C8 /* GeoTestView.mm in Sources */,
 				8475B5C119561D2500E16190 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +346,11 @@
 			isa = PBXTargetDependency;
 			target = 8475B5BA19561D2500E16190 /* GeoTest */;
 			targetProxy = 8475B5CF19561D2500E16190 /* PBXContainerItemProxy */;
+		};
+		849A8E7E1957F283008195C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gltoolscpp;
+			targetProxy = 849A8E7D1957F283008195C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -279,6 +400,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -315,6 +441,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -400,6 +531,7 @@
 				8475B5DA19561D2500E16190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8475B5DB19561D2500E16190 /* Build configuration list for PBXNativeTarget "GeoTestTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +540,7 @@
 				8475B5DD19561D2500E16190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
