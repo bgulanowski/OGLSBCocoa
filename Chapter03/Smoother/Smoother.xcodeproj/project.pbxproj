@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8444D8421957EFD900EE5832 /* SmootherView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8444D8411957EFD900EE5832 /* SmootherView.mm */; };
 		8475B61919561D5A00E16190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B61819561D5A00E16190 /* main.m */; };
 		8475B61C19561D5A00E16190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B61B19561D5A00E16190 /* AppDelegate.m */; };
 		8475B61E19561D5A00E16190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8475B61D19561D5A00E16190 /* Images.xcassets */; };
 		8475B62119561D5A00E16190 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8475B61F19561D5A00E16190 /* MainMenu.xib */; };
 		8475B62D19561D5A00E16190 /* SmootherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B62C19561D5A00E16190 /* SmootherTests.m */; };
+		849A8E661957F011008195C8 /* OGLSBView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 849A8E651957F011008195C8 /* OGLSBView.mm */; };
+		849A8E751957F206008195C8 /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 849A8E721957F1F4008195C8 /* libgltoolscpp.a */; };
+		849A8E771957F207008195C8 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849A8E761957F207008195C8 /* OpenGL.framework */; };
+		849A8E791957F20B008195C8 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 849A8E781957F20B008195C8 /* libc++.dylib */; };
+		849A8E7B1957F20F008195C8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 849A8E7A1957F20F008195C8 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,9 +28,40 @@
 			remoteGlobalIDString = 8475B61219561D5A00E16190;
 			remoteInfo = Smoother;
 		};
+		849A8E6D1957F1F4008195C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849A8E671957F1F4008195C8 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847BA193B8EC5008FFE77;
+			remoteInfo = GLTools;
+		};
+		849A8E6F1957F1F4008195C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849A8E671957F1F4008195C8 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847D1193B8EC5008FFE77;
+			remoteInfo = GLToolsTests;
+		};
+		849A8E711957F1F4008195C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849A8E671957F1F4008195C8 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C8F7C0193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
+		849A8E731957F1F8008195C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 849A8E671957F1F4008195C8 /* GLTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C8F7BF193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8444D7FF1957EC2200EE5832 /* Smoother.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Smoother.cpp; path = ../../../../../../Shared/Code/svn/oglsuperbible5/Src/Chapter03/Smoother/Smoother.cpp; sourceTree = "<group>"; };
+		8444D8401957EFD900EE5832 /* SmootherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmootherView.h; sourceTree = "<group>"; };
+		8444D8411957EFD900EE5832 /* SmootherView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SmootherView.mm; sourceTree = "<group>"; };
 		8475B61319561D5A00E16190 /* Smoother.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smoother.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8475B61719561D5A00E16190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8475B61819561D5A00E16190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,6 +72,12 @@
 		8475B62619561D5A00E16190 /* SmootherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmootherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8475B62B19561D5A00E16190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8475B62C19561D5A00E16190 /* SmootherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmootherTests.m; sourceTree = "<group>"; };
+		849A8E641957F011008195C8 /* OGLSBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSBView.h; sourceTree = "<group>"; };
+		849A8E651957F011008195C8 /* OGLSBView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGLSBView.mm; sourceTree = "<group>"; };
+		849A8E671957F1F4008195C8 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
+		849A8E761957F207008195C8 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		849A8E781957F20B008195C8 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		849A8E7A1957F20F008195C8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				849A8E771957F207008195C8 /* OpenGL.framework in Frameworks */,
+				849A8E7B1957F20F008195C8 /* Cocoa.framework in Frameworks */,
+				849A8E791957F20B008195C8 /* libc++.dylib in Frameworks */,
+				849A8E751957F206008195C8 /* libgltoolscpp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +105,12 @@
 		8475B60A19561D5A00E16190 = {
 			isa = PBXGroup;
 			children = (
+				849A8E7A1957F20F008195C8 /* Cocoa.framework */,
+				849A8E781957F20B008195C8 /* libc++.dylib */,
+				849A8E761957F207008195C8 /* OpenGL.framework */,
+				849A8E671957F1F4008195C8 /* GLTools.xcodeproj */,
+				8444D7FF1957EC2200EE5832 /* Smoother.cpp */,
+				849A8E631957F011008195C8 /* Shared */,
 				8475B61519561D5A00E16190 /* Smoother */,
 				8475B62919561D5A00E16190 /* SmootherTests */,
 				8475B61419561D5A00E16190 /* Products */,
@@ -81,6 +134,8 @@
 				8475B61D19561D5A00E16190 /* Images.xcassets */,
 				8475B61F19561D5A00E16190 /* MainMenu.xib */,
 				8475B61619561D5A00E16190 /* Supporting Files */,
+				8444D8401957EFD900EE5832 /* SmootherView.h */,
+				8444D8411957EFD900EE5832 /* SmootherView.mm */,
 			);
 			path = Smoother;
 			sourceTree = "<group>";
@@ -111,6 +166,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		849A8E631957F011008195C8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				849A8E641957F011008195C8 /* OGLSBView.h */,
+				849A8E651957F011008195C8 /* OGLSBView.mm */,
+			);
+			name = Shared;
+			path = ../../Shared;
+			sourceTree = "<group>";
+		};
+		849A8E681957F1F4008195C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849A8E6E1957F1F4008195C8 /* GLTools.framework */,
+				849A8E701957F1F4008195C8 /* GLToolsTests.xctest */,
+				849A8E721957F1F4008195C8 /* libgltoolscpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,6 +200,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				849A8E741957F1F8008195C8 /* PBXTargetDependency */,
 			);
 			name = Smoother;
 			productName = Smoother;
@@ -178,6 +254,12 @@
 			mainGroup = 8475B60A19561D5A00E16190;
 			productRefGroup = 8475B61419561D5A00E16190 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 849A8E681957F1F4008195C8 /* Products */;
+					ProjectRef = 849A8E671957F1F4008195C8 /* GLTools.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8475B61219561D5A00E16190 /* Smoother */,
@@ -185,6 +267,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		849A8E6E1957F1F4008195C8 /* GLTools.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GLTools.framework;
+			remoteRef = 849A8E6D1957F1F4008195C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		849A8E701957F1F4008195C8 /* GLToolsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GLToolsTests.xctest;
+			remoteRef = 849A8E6F1957F1F4008195C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		849A8E721957F1F4008195C8 /* libgltoolscpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgltoolscpp.a;
+			remoteRef = 849A8E711957F1F4008195C8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8475B61119561D5A00E16190 /* Resources */ = {
@@ -211,6 +317,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8475B61C19561D5A00E16190 /* AppDelegate.m in Sources */,
+				8444D8421957EFD900EE5832 /* SmootherView.mm in Sources */,
+				849A8E661957F011008195C8 /* OGLSBView.mm in Sources */,
 				8475B61919561D5A00E16190 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -230,6 +338,11 @@
 			isa = PBXTargetDependency;
 			target = 8475B61219561D5A00E16190 /* Smoother */;
 			targetProxy = 8475B62719561D5A00E16190 /* PBXContainerItemProxy */;
+		};
+		849A8E741957F1F8008195C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gltoolscpp;
+			targetProxy = 849A8E731957F1F8008195C8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -279,6 +392,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -315,6 +433,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -400,6 +523,7 @@
 				8475B63219561D5A00E16190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8475B63319561D5A00E16190 /* Build configuration list for PBXNativeTarget "SmootherTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +532,7 @@
 				8475B63519561D5A00E16190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
