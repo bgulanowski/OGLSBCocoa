@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8444D80E1957EC7400EE5832 /* OGLSBView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8444D80D1957EC7400EE5832 /* OGLSBView.mm */; };
+		8444D8351957EC9D00EE5832 /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444D81A1957EC8200EE5832 /* libgltoolscpp.a */; };
+		8444D8371957EC9D00EE5832 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444D8361957EC9D00EE5832 /* OpenGL.framework */; };
+		8444D8391957ECB500EE5832 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444D8381957ECB500EE5832 /* Cocoa.framework */; };
+		8444D83C1957ED1A00EE5832 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444D83B1957ED1A00EE5832 /* libc++.dylib */; };
+		8444D83F1957ED3300EE5832 /* BlendingView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8444D83E1957ED3300EE5832 /* BlendingView.mm */; };
 		8475B59519561D0800E16190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B59419561D0800E16190 /* main.m */; };
 		8475B59819561D0800E16190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B59719561D0800E16190 /* AppDelegate.m */; };
 		8475B59A19561D0800E16190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8475B59919561D0800E16190 /* Images.xcassets */; };
@@ -15,6 +21,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8444D8151957EC8200EE5832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D80F1957EC8200EE5832 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847BA193B8EC5008FFE77;
+			remoteInfo = GLTools;
+		};
+		8444D8171957EC8200EE5832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D80F1957EC8200EE5832 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847D1193B8EC5008FFE77;
+			remoteInfo = GLToolsTests;
+		};
+		8444D8191957EC8200EE5832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D80F1957EC8200EE5832 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C8F7C0193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
+		8444D8331957EC9400EE5832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D80F1957EC8200EE5832 /* GLTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C8F7BF193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
 		8475B5A319561D0800E16190 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8475B58719561D0800E16190 /* Project object */;
@@ -25,6 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8444D8021957EC4000EE5832 /* Blending.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Blending.cpp; path = ../../../../../../Shared/Code/svn/oglsuperbible5/Src/Chapter03/Blending/Blending.cpp; sourceTree = "<group>"; };
+		8444D80C1957EC7400EE5832 /* OGLSBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSBView.h; sourceTree = "<group>"; };
+		8444D80D1957EC7400EE5832 /* OGLSBView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGLSBView.mm; sourceTree = "<group>"; };
+		8444D80F1957EC8200EE5832 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
+		8444D8361957EC9D00EE5832 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8444D8381957ECB500EE5832 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8444D83B1957ED1A00EE5832 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		8444D83D1957ED3300EE5832 /* BlendingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlendingView.h; sourceTree = "<group>"; };
+		8444D83E1957ED3300EE5832 /* BlendingView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BlendingView.mm; sourceTree = "<group>"; };
 		8475B58F19561D0800E16190 /* Blending.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Blending.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8475B59319561D0800E16190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8475B59419561D0800E16190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8444D83C1957ED1A00EE5832 /* libc++.dylib in Frameworks */,
+				8444D8391957ECB500EE5832 /* Cocoa.framework in Frameworks */,
+				8444D8371957EC9D00EE5832 /* OpenGL.framework in Frameworks */,
+				8444D8351957EC9D00EE5832 /* libgltoolscpp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,11 +102,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8444D80B1957EC7400EE5832 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8444D80C1957EC7400EE5832 /* OGLSBView.h */,
+				8444D80D1957EC7400EE5832 /* OGLSBView.mm */,
+			);
+			name = Shared;
+			path = ../../Shared;
+			sourceTree = "<group>";
+		};
+		8444D8101957EC8200EE5832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8444D8161957EC8200EE5832 /* GLTools.framework */,
+				8444D8181957EC8200EE5832 /* GLToolsTests.xctest */,
+				8444D81A1957EC8200EE5832 /* libgltoolscpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8444D83A1957ECDD00EE5832 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8444D83B1957ED1A00EE5832 /* libc++.dylib */,
+				8444D8381957ECB500EE5832 /* Cocoa.framework */,
+				8444D8361957EC9D00EE5832 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8475B58619561D0800E16190 = {
 			isa = PBXGroup;
 			children = (
+				8444D80F1957EC8200EE5832 /* GLTools.xcodeproj */,
+				8444D8021957EC4000EE5832 /* Blending.cpp */,
+				8444D80B1957EC7400EE5832 /* Shared */,
 				8475B59119561D0800E16190 /* Blending */,
 				8475B5A519561D0800E16190 /* BlendingTests */,
+				8444D83A1957ECDD00EE5832 /* Frameworks */,
 				8475B59019561D0800E16190 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,6 +159,8 @@
 			children = (
 				8475B59619561D0800E16190 /* AppDelegate.h */,
 				8475B59719561D0800E16190 /* AppDelegate.m */,
+				8444D83D1957ED3300EE5832 /* BlendingView.h */,
+				8444D83E1957ED3300EE5832 /* BlendingView.mm */,
 				8475B59919561D0800E16190 /* Images.xcassets */,
 				8475B59B19561D0800E16190 /* MainMenu.xib */,
 				8475B59219561D0800E16190 /* Supporting Files */,
@@ -125,6 +208,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8444D8341957EC9400EE5832 /* PBXTargetDependency */,
 			);
 			name = Blending;
 			productName = Blending;
@@ -178,6 +262,12 @@
 			mainGroup = 8475B58619561D0800E16190;
 			productRefGroup = 8475B59019561D0800E16190 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8444D8101957EC8200EE5832 /* Products */;
+					ProjectRef = 8444D80F1957EC8200EE5832 /* GLTools.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8475B58E19561D0800E16190 /* Blending */,
@@ -185,6 +275,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8444D8161957EC8200EE5832 /* GLTools.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GLTools.framework;
+			remoteRef = 8444D8151957EC8200EE5832 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8444D8181957EC8200EE5832 /* GLToolsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GLToolsTests.xctest;
+			remoteRef = 8444D8171957EC8200EE5832 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8444D81A1957EC8200EE5832 /* libgltoolscpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgltoolscpp.a;
+			remoteRef = 8444D8191957EC8200EE5832 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8475B58D19561D0800E16190 /* Resources */ = {
@@ -211,7 +325,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8475B59819561D0800E16190 /* AppDelegate.m in Sources */,
+				8444D80E1957EC7400EE5832 /* OGLSBView.mm in Sources */,
 				8475B59519561D0800E16190 /* main.m in Sources */,
+				8444D83F1957ED3300EE5832 /* BlendingView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +342,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8444D8341957EC9400EE5832 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gltoolscpp;
+			targetProxy = 8444D8331957EC9400EE5832 /* PBXContainerItemProxy */;
+		};
 		8475B5A419561D0800E16190 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8475B58E19561D0800E16190 /* Blending */;
@@ -279,6 +400,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -315,6 +441,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include/,
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -400,6 +531,7 @@
 				8475B5AE19561D0800E16190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8475B5AF19561D0800E16190 /* Build configuration list for PBXNativeTarget "BlendingTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +540,7 @@
 				8475B5B119561D0800E16190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
