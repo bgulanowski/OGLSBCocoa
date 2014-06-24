@@ -64,12 +64,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8402F44E1959305700AECDC1 /* Move.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Move.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8402F44E1959305700AECDC1 /* Move_4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Move_4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8402F4511959305700AECDC1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8402F4541959305700AECDC1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		8402F4551959305700AECDC1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8402F4561959305700AECDC1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		8402F4591959305700AECDC1 /* Move-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Move-Info.plist"; sourceTree = "<group>"; };
+		8402F4591959305700AECDC1 /* Move_4-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Move_4-Info.plist"; sourceTree = "<group>"; };
 		8402F45B1959305700AECDC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8402F45D1959305700AECDC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8402F45F1959305700AECDC1 /* Move-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Move-Prefix.pch"; sourceTree = "<group>"; };
@@ -78,9 +78,9 @@
 		8402F4641959305700AECDC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8402F4671959305700AECDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8402F4691959305700AECDC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8402F46F1959305700AECDC1 /* MoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8402F46F1959305700AECDC1 /* Move_4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Move_4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8402F4701959305700AECDC1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		8402F4771959305700AECDC1 /* MoveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MoveTests-Info.plist"; sourceTree = "<group>"; };
+		8402F4771959305700AECDC1 /* Move_4Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Move_4Tests-Info.plist"; sourceTree = "<group>"; };
 		8402F4791959305700AECDC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8402F47B1959305700AECDC1 /* MoveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoveTests.m; sourceTree = "<group>"; };
 		8402F4861959306000AECDC1 /* OGLSBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSBView.h; sourceTree = "<group>"; };
@@ -133,8 +133,8 @@
 		8402F44F1959305700AECDC1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8402F44E1959305700AECDC1 /* Move.app */,
-				8402F46F1959305700AECDC1 /* MoveTests.xctest */,
+				8402F44E1959305700AECDC1 /* Move_4.app */,
+				8402F46F1959305700AECDC1 /* Move_4Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 		8402F4581959305700AECDC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8402F4591959305700AECDC1 /* Move-Info.plist */,
+				8402F4591959305700AECDC1 /* Move_4-Info.plist */,
 				8402F45A1959305700AECDC1 /* InfoPlist.strings */,
 				8402F45D1959305700AECDC1 /* main.m */,
 				8402F45F1959305700AECDC1 /* Move-Prefix.pch */,
@@ -199,7 +199,7 @@
 		8402F4761959305700AECDC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8402F4771959305700AECDC1 /* MoveTests-Info.plist */,
+				8402F4771959305700AECDC1 /* Move_4Tests-Info.plist */,
 				8402F4781959305700AECDC1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -228,9 +228,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8402F44D1959305700AECDC1 /* Move */ = {
+		8402F44D1959305700AECDC1 /* Move_4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8402F47F1959305700AECDC1 /* Build configuration list for PBXNativeTarget "Move" */;
+			buildConfigurationList = 8402F47F1959305700AECDC1 /* Build configuration list for PBXNativeTarget "Move_4" */;
 			buildPhases = (
 				8402F44A1959305700AECDC1 /* Sources */,
 				8402F44B1959305700AECDC1 /* Frameworks */,
@@ -241,14 +241,14 @@
 			dependencies = (
 				8402F4961959308100AECDC1 /* PBXTargetDependency */,
 			);
-			name = Move;
+			name = Move_4;
 			productName = Move;
-			productReference = 8402F44E1959305700AECDC1 /* Move.app */;
+			productReference = 8402F44E1959305700AECDC1 /* Move_4.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8402F46E1959305700AECDC1 /* MoveTests */ = {
+		8402F46E1959305700AECDC1 /* Move_4Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8402F4821959305700AECDC1 /* Build configuration list for PBXNativeTarget "MoveTests" */;
+			buildConfigurationList = 8402F4821959305700AECDC1 /* Build configuration list for PBXNativeTarget "Move_4Tests" */;
 			buildPhases = (
 				8402F46B1959305700AECDC1 /* Sources */,
 				8402F46C1959305700AECDC1 /* Frameworks */,
@@ -259,9 +259,9 @@
 			dependencies = (
 				8402F4741959305700AECDC1 /* PBXTargetDependency */,
 			);
-			name = MoveTests;
+			name = Move_4Tests;
 			productName = MoveTests;
-			productReference = 8402F46F1959305700AECDC1 /* MoveTests.xctest */;
+			productReference = 8402F46F1959305700AECDC1 /* Move_4Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -278,7 +278,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8402F4491959305700AECDC1 /* Build configuration list for PBXProject "Move" */;
+			buildConfigurationList = 8402F4491959305700AECDC1 /* Build configuration list for PBXProject "Move_4" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -297,8 +297,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				8402F44D1959305700AECDC1 /* Move */,
-				8402F46E1959305700AECDC1 /* MoveTests */,
+				8402F44D1959305700AECDC1 /* Move_4 */,
+				8402F46E1959305700AECDC1 /* Move_4Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -374,7 +374,7 @@
 /* Begin PBXTargetDependency section */
 		8402F4741959305700AECDC1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8402F44D1959305700AECDC1 /* Move */;
+			target = 8402F44D1959305700AECDC1 /* Move_4 */;
 			targetProxy = 8402F4731959305700AECDC1 /* PBXContainerItemProxy */;
 		};
 		8402F4961959308100AECDC1 /* PBXTargetDependency */ = {
@@ -506,9 +506,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Move/Move-Prefix.pch";
-				INFOPLIST_FILE = "Move/Move-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Move/Move_4-Prefix.pch";
+				INFOPLIST_FILE = "Move/Move_4-Info.plist";
+				PRODUCT_NAME = Move_4;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -519,9 +519,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Move/Move-Prefix.pch";
-				INFOPLIST_FILE = "Move/Move-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Move/Move_4-Prefix.pch";
+				INFOPLIST_FILE = "Move/Move_4-Info.plist";
+				PRODUCT_NAME = Move_4;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -541,8 +541,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MoveTests/MoveTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MoveTests/Move_4Tests-Info.plist";
+				PRODUCT_NAME = Move_4Tests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -559,8 +559,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Move/Move-Prefix.pch";
-				INFOPLIST_FILE = "MoveTests/MoveTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MoveTests/Move_4Tests-Info.plist";
+				PRODUCT_NAME = Move_4Tests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -569,7 +569,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8402F4491959305700AECDC1 /* Build configuration list for PBXProject "Move" */ = {
+		8402F4491959305700AECDC1 /* Build configuration list for PBXProject "Move_4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8402F47D1959305700AECDC1 /* Debug */,
@@ -578,21 +578,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8402F47F1959305700AECDC1 /* Build configuration list for PBXNativeTarget "Move" */ = {
+		8402F47F1959305700AECDC1 /* Build configuration list for PBXNativeTarget "Move_4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8402F4801959305700AECDC1 /* Debug */,
 				8402F4811959305700AECDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		8402F4821959305700AECDC1 /* Build configuration list for PBXNativeTarget "MoveTests" */ = {
+		8402F4821959305700AECDC1 /* Build configuration list for PBXNativeTarget "Move_4Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8402F4831959305700AECDC1 /* Debug */,
 				8402F4841959305700AECDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
