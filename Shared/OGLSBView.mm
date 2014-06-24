@@ -7,9 +7,29 @@
 //
 
 #import "OGLSBView.h"
-#import <OpenGL/gl.h>
 
-@implementation OGLSBView
+#import <OpenGL/gl.h>
+#import <CoreVideo/CVDisplayLink.h>
+
+static CVReturn DisplayLinkCallback(CVDisplayLinkRef displayLink,
+									const CVTimeStamp *inNow,
+									const CVTimeStamp *inOutputTime,
+									CVOptionFlags flagsIn,
+									CVOptionFlags *flagsOut,
+									void *oglsbView) {
+	[(__bridge OGLSBView *)oglsbView setNeedsDisplay:YES];
+	return kCVReturnSuccess;
+}
+
+@implementation OGLSBView {
+	CVDisplayLinkRef _displayLink;
+}
+
+@dynamic useDisplayLink;
+
+- (BOOL)useDisplayLink {
+	return NO;
+}
 
 - (instancetype)initWithFrame:(NSRect)frameRect pixelFormat:(NSOpenGLPixelFormat *)format {
 	self = [super initWithFrame:frameRect pixelFormat:format];
@@ -28,8 +48,23 @@
 	return self;
 }
 
-- (void)setup {
+- (void)dealloc {
+	if (_displayLink) {
+		CVDisplayLinkRelease(_displayLink), _displayLink = NULL;
+	}
+}
 
+- (void)setup {
+	if ([self useDisplayLink]) {
+		CVDisplayLinkCreateWithActiveCGDisplays(&_displayLink);
+		CVDisplayLinkSetOutputCallback(_displayLink, DisplayLinkCallback, (__bridge void *)self);
+	}
+}
+
+- (void)awakeFromNib {
+	if ([self useDisplayLink]) {
+		CVDisplayLinkStart(_displayLink);
+	}
 }
 
 - (BOOL)acceptsFirstResponder {

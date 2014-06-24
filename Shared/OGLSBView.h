@@ -10,6 +10,9 @@
 
 @interface OGLSBView : NSOpenGLView
 
+// subclasses should override to return YES if needed; default is NO
+@property (nonatomic, readonly) BOOL useDisplayLink;
+
 - (void)setup;
 
 @end
