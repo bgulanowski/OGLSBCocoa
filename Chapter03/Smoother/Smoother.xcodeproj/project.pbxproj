@@ -105,14 +105,12 @@
 		8475B60A19561D5A00E16190 = {
 			isa = PBXGroup;
 			children = (
-				849A8E7A1957F20F008195C8 /* Cocoa.framework */,
-				849A8E781957F20B008195C8 /* libc++.dylib */,
-				849A8E761957F207008195C8 /* OpenGL.framework */,
 				849A8E671957F1F4008195C8 /* GLTools.xcodeproj */,
 				8444D7FF1957EC2200EE5832 /* Smoother.cpp */,
 				849A8E631957F011008195C8 /* Shared */,
 				8475B61519561D5A00E16190 /* Smoother */,
 				8475B62919561D5A00E16190 /* SmootherTests */,
+				849A8E7C1957F24B008195C8 /* Frameworks */,
 				8475B61419561D5A00E16190 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -184,6 +182,16 @@
 				849A8E721957F1F4008195C8 /* libgltoolscpp.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		849A8E7C1957F24B008195C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				849A8E7A1957F20F008195C8 /* Cocoa.framework */,
+				849A8E761957F207008195C8 /* OpenGL.framework */,
+				849A8E781957F20B008195C8 /* libc++.dylib */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
