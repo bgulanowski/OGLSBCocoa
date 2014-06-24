@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8402F3DD19592B2600AECDC1 /* ScissorView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8402F3DC19592B2600AECDC1 /* ScissorView.mm */; };
+		8402F3E319592BB100AECDC1 /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8444D8321957EC8800EE5832 /* libgltoolscpp.a */; };
+		8402F3E719592BB200AECDC1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3E419592BB100AECDC1 /* Cocoa.framework */; };
+		8402F3E819592BB200AECDC1 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3E519592BB100AECDC1 /* libc++.dylib */; };
+		8402F3E919592BB200AECDC1 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402F3E619592BB100AECDC1 /* OpenGL.framework */; };
+		8444D8061957EC6500EE5832 /* OGLSBView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8444D8051957EC6500EE5832 /* OGLSBView.mm */; };
 		8475B5ED19561D3800E16190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B5EC19561D3800E16190 /* main.m */; };
 		8475B5F019561D3800E16190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8475B5EF19561D3800E16190 /* AppDelegate.m */; };
 		8475B5F219561D3800E16190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8475B5F119561D3800E16190 /* Images.xcassets */; };
@@ -15,6 +21,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		8402F3E119592B9800AECDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D8271957EC8800EE5832 /* GLTools.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84C8F7BF193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
+		8444D82D1957EC8800EE5832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D8271957EC8800EE5832 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847BA193B8EC5008FFE77;
+			remoteInfo = GLTools;
+		};
+		8444D82F1957EC8800EE5832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D8271957EC8800EE5832 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847D1193B8EC5008FFE77;
+			remoteInfo = GLToolsTests;
+		};
+		8444D8311957EC8800EE5832 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8444D8271957EC8800EE5832 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C8F7C0193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
 		8475B5FB19561D3900E16190 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8475B5DF19561D3800E16190 /* Project object */;
@@ -25,6 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8402F3DB19592B2600AECDC1 /* ScissorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScissorView.h; sourceTree = "<group>"; };
+		8402F3DC19592B2600AECDC1 /* ScissorView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScissorView.mm; sourceTree = "<group>"; };
+		8402F3E419592BB100AECDC1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8402F3E519592BB100AECDC1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		8402F3E619592BB100AECDC1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		8444D8001957EC3000EE5832 /* Scissor.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Scissor.cpp; path = ../../../../../../Shared/Code/svn/oglsuperbible5/Src/Chapter03/Scissor/Scissor.cpp; sourceTree = "<group>"; };
+		8444D8041957EC6500EE5832 /* OGLSBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSBView.h; sourceTree = "<group>"; };
+		8444D8051957EC6500EE5832 /* OGLSBView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGLSBView.mm; sourceTree = "<group>"; };
+		8444D8271957EC8800EE5832 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
 		8475B5E719561D3800E16190 /* Scissor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scissor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8475B5EB19561D3800E16190 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8475B5EC19561D3800E16190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +85,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8402F3E719592BB200AECDC1 /* Cocoa.framework in Frameworks */,
+				8402F3E819592BB200AECDC1 /* libc++.dylib in Frameworks */,
+				8402F3E919592BB200AECDC1 /* OpenGL.framework in Frameworks */,
+				8402F3E319592BB100AECDC1 /* libgltoolscpp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,9 +102,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8444D8031957EC6500EE5832 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				8444D8041957EC6500EE5832 /* OGLSBView.h */,
+				8444D8051957EC6500EE5832 /* OGLSBView.mm */,
+			);
+			name = Shared;
+			path = ../../Shared;
+			sourceTree = "<group>";
+		};
+		8444D8281957EC8800EE5832 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8444D82E1957EC8800EE5832 /* GLTools.framework */,
+				8444D8301957EC8800EE5832 /* GLToolsTests.xctest */,
+				8444D8321957EC8800EE5832 /* libgltoolscpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		8475B5DE19561D3800E16190 = {
 			isa = PBXGroup;
 			children = (
+				8402F3E419592BB100AECDC1 /* Cocoa.framework */,
+				8402F3E519592BB100AECDC1 /* libc++.dylib */,
+				8402F3E619592BB100AECDC1 /* OpenGL.framework */,
+				8444D8271957EC8800EE5832 /* GLTools.xcodeproj */,
+				8444D8001957EC3000EE5832 /* Scissor.cpp */,
+				8444D8031957EC6500EE5832 /* Shared */,
 				8475B5E919561D3800E16190 /* Scissor */,
 				8475B5FD19561D3900E16190 /* ScissorTests */,
 				8475B5E819561D3800E16190 /* Products */,
@@ -78,6 +151,8 @@
 			children = (
 				8475B5EE19561D3800E16190 /* AppDelegate.h */,
 				8475B5EF19561D3800E16190 /* AppDelegate.m */,
+				8402F3DB19592B2600AECDC1 /* ScissorView.h */,
+				8402F3DC19592B2600AECDC1 /* ScissorView.mm */,
 				8475B5F119561D3800E16190 /* Images.xcassets */,
 				8475B5F319561D3900E16190 /* MainMenu.xib */,
 				8475B5EA19561D3800E16190 /* Supporting Files */,
@@ -125,6 +200,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8402F3E219592B9800AECDC1 /* PBXTargetDependency */,
 			);
 			name = Scissor;
 			productName = Scissor;
@@ -178,6 +254,12 @@
 			mainGroup = 8475B5DE19561D3800E16190;
 			productRefGroup = 8475B5E819561D3800E16190 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8444D8281957EC8800EE5832 /* Products */;
+					ProjectRef = 8444D8271957EC8800EE5832 /* GLTools.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8475B5E619561D3800E16190 /* Scissor */,
@@ -185,6 +267,30 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8444D82E1957EC8800EE5832 /* GLTools.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GLTools.framework;
+			remoteRef = 8444D82D1957EC8800EE5832 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8444D8301957EC8800EE5832 /* GLToolsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GLToolsTests.xctest;
+			remoteRef = 8444D82F1957EC8800EE5832 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8444D8321957EC8800EE5832 /* libgltoolscpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgltoolscpp.a;
+			remoteRef = 8444D8311957EC8800EE5832 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8475B5E519561D3800E16190 /* Resources */ = {
@@ -211,6 +317,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8475B5F019561D3800E16190 /* AppDelegate.m in Sources */,
+				8402F3DD19592B2600AECDC1 /* ScissorView.mm in Sources */,
+				8444D8061957EC6500EE5832 /* OGLSBView.mm in Sources */,
 				8475B5ED19561D3800E16190 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +334,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		8402F3E219592B9800AECDC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = gltoolscpp;
+			targetProxy = 8402F3E119592B9800AECDC1 /* PBXContainerItemProxy */;
+		};
 		8475B5FC19561D3900E16190 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8475B5E619561D3800E16190 /* Scissor */;
@@ -400,6 +513,7 @@
 				8475B60619561D3900E16190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8475B60719561D3900E16190 /* Build configuration list for PBXNativeTarget "ScissorTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +522,7 @@
 				8475B60919561D3900E16190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
