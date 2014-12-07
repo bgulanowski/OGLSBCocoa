@@ -25,14 +25,19 @@
 	
 	// Blue background
 	glClearColor(0.0f, 0.0f, 1.0f, 1.0f );
-	
+
 	_shaderManager = new GLShaderManager();
 	_shaderManager->InitializeStockShaders();
-	
+
+	GLfloat vRed[] = { 1.0f, 0.0f, 0.0f, 1.0f };
+	_shaderManager->UseStockShader(GLT_SHADER_IDENTITY, vRed);
+
 	// Load up a triangle
-	GLfloat vVerts[] = { -0.5f, 0.0f, 0.0f,
+	GLfloat vVerts[] = {
+		-0.5f, 0.0f, 0.0f,
 		0.5f, 0.0f, 0.0f,
-		0.0f, 0.5f, 0.0f };
+		0.0f, 0.5f, 0.0f
+	};
 	
 	_triangleBatch = new GLBatch();
 	_triangleBatch->Begin(GL_TRIANGLES, 3);
@@ -42,12 +47,9 @@
 
 - (void)drawRect:(NSRect)dirtyRect {
 
-	static GLfloat vRed[] = { 1.0f, 0.0f, 0.0f, 1.0f };
-
 	// Clear the window with current clearing color
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 	
-	_shaderManager->UseStockShader(GLT_SHADER_IDENTITY, vRed);
 	_triangleBatch->Draw();
 	
 	[self.openGLContext flushBuffer];
