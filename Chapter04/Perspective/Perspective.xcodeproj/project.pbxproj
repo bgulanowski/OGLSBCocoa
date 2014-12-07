@@ -585,6 +585,7 @@
 				8402F5B919594E4E00AECDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8402F5BA19594E4E00AECDC1 /* Build configuration list for PBXNativeTarget "PerspectiveTests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +594,7 @@
 				8402F5BC19594E4E00AECDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

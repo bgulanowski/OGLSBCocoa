@@ -275,7 +275,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Lichen Labs";
+				ORGANIZATIONNAME = GLSuperBible;
 				TargetAttributes = {
 					8458487D193C5105008FFE77 = {
 						TestTargetID = 8458485C193C5105008FFE77;
