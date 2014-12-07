@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84195CCA196E088D00C2745F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84195CC9196E088D00C2745F /* Cocoa.framework */; };
+		84195CD4196E088D00C2745F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84195CD2196E088D00C2745F /* InfoPlist.strings */; };
+		84195CD6196E088D00C2745F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84195CD5196E088D00C2745F /* main.m */; };
+		84195CDA196E088D00C2745F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 84195CD8196E088D00C2745F /* Credits.rtf */; };
+		84195CDD196E088D00C2745F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84195CDC196E088D00C2745F /* AppDelegate.m */; };
+		84195CE0196E088D00C2745F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84195CDE196E088D00C2745F /* MainMenu.xib */; };
+		84195CE2196E088D00C2745F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84195CE1196E088D00C2745F /* Images.xcassets */; };
+		84195CE9196E088D00C2745F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84195CE8196E088D00C2745F /* XCTest.framework */; };
+		84195CEA196E088D00C2745F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84195CC9196E088D00C2745F /* Cocoa.framework */; };
+		84195CF2196E088D00C2745F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84195CF0196E088D00C2745F /* InfoPlist.strings */; };
+		84195CF4196E088D00C2745F /* PyramidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84195CF3196E088D00C2745F /* PyramidTests.m */; };
+		84BD4E68196E0931005891A4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BD4E67196E0931005891A4 /* OpenGL.framework */; };
+		84BD4E69196E0935005891A4 /* libgltoolscpp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BD4E66196E090C005891A4 /* libgltoolscpp.a */; };
+		84BD4E6C196E095F005891A4 /* Pyramid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84BD4E6B196E095F005891A4 /* Pyramid.mm */; };
+		84BD4E80196E0984005891A4 /* OGLSBView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84BD4E7F196E0984005891A4 /* OGLSBView.mm */; };
+		84BD4E89196E0A91005891A4 /* stone.tga in Resources */ = {isa = PBXBuildFile; fileRef = 84BD4E88196E0A91005891A4 /* stone.tga */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84195CEB196E088D00C2745F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84195CBE196E088D00C2745F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84195CC5196E088D00C2745F;
+			remoteInfo = Pyramid;
+		};
+		84BD4E61196E090C005891A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BD4E5B196E090C005891A4 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847BA193B8EC5008FFE77;
+			remoteInfo = GLTools;
+		};
+		84BD4E63196E090C005891A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BD4E5B196E090C005891A4 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 845847D1193B8EC5008FFE77;
+			remoteInfo = GLToolsTests;
+		};
+		84BD4E65196E090C005891A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84BD4E5B196E090C005891A4 /* GLTools.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84C8F7C0193D67F400911378;
+			remoteInfo = gltoolscpp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84195CC6196E088D00C2745F /* Pyramid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pyramid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84195CC9196E088D00C2745F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		84195CCC196E088D00C2745F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		84195CCD196E088D00C2745F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		84195CCE196E088D00C2745F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84195CD1196E088D00C2745F /* Pyramid-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pyramid-Info.plist"; sourceTree = "<group>"; };
+		84195CD3196E088D00C2745F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84195CD5196E088D00C2745F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84195CD7196E088D00C2745F /* Pyramid-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pyramid-Prefix.pch"; sourceTree = "<group>"; };
+		84195CD9196E088D00C2745F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		84195CDB196E088D00C2745F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84195CDC196E088D00C2745F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84195CDF196E088D00C2745F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		84195CE1196E088D00C2745F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		84195CE7196E088D00C2745F /* PyramidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PyramidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84195CE8196E088D00C2745F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		84195CEF196E088D00C2745F /* PyramidTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PyramidTests-Info.plist"; sourceTree = "<group>"; };
+		84195CF1196E088D00C2745F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84195CF3196E088D00C2745F /* PyramidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyramidTests.m; sourceTree = "<group>"; };
+		84BD4E5B196E090C005891A4 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
+		84BD4E67196E0931005891A4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		84BD4E6A196E095F005891A4 /* Pyramid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pyramid.h; sourceTree = "<group>"; };
+		84BD4E6B196E095F005891A4 /* Pyramid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Pyramid.mm; sourceTree = "<group>"; };
+		84BD4E7E196E0984005891A4 /* OGLSBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSBView.h; sourceTree = "<group>"; };
+		84BD4E7F196E0984005891A4 /* OGLSBView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OGLSBView.mm; sourceTree = "<group>"; };
+		84BD4E85196E0A48005891A4 /* Pyramid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pyramid.cpp; sourceTree = "<group>"; };
+		84BD4E88196E0A91005891A4 /* stone.tga */ = {isa = PBXFileReference; lastKnownFileType = file; path = stone.tga; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84195CC3196E088D00C2745F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84195CCA196E088D00C2745F /* Cocoa.framework in Frameworks */,
+				84BD4E68196E0931005891A4 /* OpenGL.framework in Frameworks */,
+				84BD4E69196E0935005891A4 /* libgltoolscpp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84195CE4196E088D00C2745F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84195CEA196E088D00C2745F /* Cocoa.framework in Frameworks */,
+				84195CE9196E088D00C2745F /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84195CBD196E088D00C2745F = {
+			isa = PBXGroup;
+			children = (
+				84BD4E84196E0A34005891A4 /* original */,
+				84BD4E5B196E090C005891A4 /* GLTools.xcodeproj */,
+				84BD4E7D196E0984005891A4 /* Shared */,
+				84195CCF196E088D00C2745F /* Pyramid */,
+				84195CED196E088D00C2745F /* PyramidTests */,
+				84195CC8196E088D00C2745F /* Frameworks */,
+				84195CC7196E088D00C2745F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84195CC7196E088D00C2745F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84195CC6196E088D00C2745F /* Pyramid.app */,
+				84195CE7196E088D00C2745F /* PyramidTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84195CC8196E088D00C2745F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84BD4E67196E0931005891A4 /* OpenGL.framework */,
+				84195CC9196E088D00C2745F /* Cocoa.framework */,
+				84195CE8196E088D00C2745F /* XCTest.framework */,
+				84195CCB196E088D00C2745F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84195CCB196E088D00C2745F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84195CCC196E088D00C2745F /* AppKit.framework */,
+				84195CCD196E088D00C2745F /* CoreData.framework */,
+				84195CCE196E088D00C2745F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		84195CCF196E088D00C2745F /* Pyramid */ = {
+			isa = PBXGroup;
+			children = (
+				84195CDB196E088D00C2745F /* AppDelegate.h */,
+				84195CDC196E088D00C2745F /* AppDelegate.m */,
+				84195CDE196E088D00C2745F /* MainMenu.xib */,
+				84195CE1196E088D00C2745F /* Images.xcassets */,
+				84BD4E88196E0A91005891A4 /* stone.tga */,
+				84195CD0196E088D00C2745F /* Supporting Files */,
+				84BD4E6A196E095F005891A4 /* Pyramid.h */,
+				84BD4E6B196E095F005891A4 /* Pyramid.mm */,
+			);
+			path = Pyramid;
+			sourceTree = "<group>";
+		};
+		84195CD0196E088D00C2745F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84195CD1196E088D00C2745F /* Pyramid-Info.plist */,
+				84195CD2196E088D00C2745F /* InfoPlist.strings */,
+				84195CD5196E088D00C2745F /* main.m */,
+				84195CD7196E088D00C2745F /* Pyramid-Prefix.pch */,
+				84195CD8196E088D00C2745F /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84195CED196E088D00C2745F /* PyramidTests */ = {
+			isa = PBXGroup;
+			children = (
+				84195CF3196E088D00C2745F /* PyramidTests.m */,
+				84195CEE196E088D00C2745F /* Supporting Files */,
+			);
+			path = PyramidTests;
+			sourceTree = "<group>";
+		};
+		84195CEE196E088D00C2745F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84195CEF196E088D00C2745F /* PyramidTests-Info.plist */,
+				84195CF0196E088D00C2745F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84BD4E5C196E090C005891A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BD4E62196E090C005891A4 /* GLTools.framework */,
+				84BD4E64196E090C005891A4 /* GLToolsTests.xctest */,
+				84BD4E66196E090C005891A4 /* libgltoolscpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BD4E7D196E0984005891A4 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				84BD4E7E196E0984005891A4 /* OGLSBView.h */,
+				84BD4E7F196E0984005891A4 /* OGLSBView.mm */,
+			);
+			name = Shared;
+			path = ../../Shared;
+			sourceTree = "<group>";
+		};
+		84BD4E84196E0A34005891A4 /* original */ = {
+			isa = PBXGroup;
+			children = (
+				84BD4E85196E0A48005891A4 /* Pyramid.cpp */,
+			);
+			name = original;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84195CC5196E088D00C2745F /* Pyramid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84195CF7196E088D00C2745F /* Build configuration list for PBXNativeTarget "Pyramid" */;
+			buildPhases = (
+				84195CC2196E088D00C2745F /* Sources */,
+				84195CC3196E088D00C2745F /* Frameworks */,
+				84195CC4196E088D00C2745F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pyramid;
+			productName = Pyramid;
+			productReference = 84195CC6196E088D00C2745F /* Pyramid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84195CE6196E088D00C2745F /* PyramidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84195CFA196E088D00C2745F /* Build configuration list for PBXNativeTarget "PyramidTests" */;
+			buildPhases = (
+				84195CE3196E088D00C2745F /* Sources */,
+				84195CE4196E088D00C2745F /* Frameworks */,
+				84195CE5196E088D00C2745F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84195CEC196E088D00C2745F /* PBXTargetDependency */,
+			);
+			name = PyramidTests;
+			productName = PyramidTests;
+			productReference = 84195CE7196E088D00C2745F /* PyramidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84195CBE196E088D00C2745F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = GLSuperBible;
+				TargetAttributes = {
+					84195CE6196E088D00C2745F = {
+						TestTargetID = 84195CC5196E088D00C2745F;
+					};
+				};
+			};
+			buildConfigurationList = 84195CC1196E088D00C2745F /* Build configuration list for PBXProject "Pyramid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84195CBD196E088D00C2745F;
+			productRefGroup = 84195CC7196E088D00C2745F /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84BD4E5C196E090C005891A4 /* Products */;
+					ProjectRef = 84BD4E5B196E090C005891A4 /* GLTools.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				84195CC5196E088D00C2745F /* Pyramid */,
+				84195CE6196E088D00C2745F /* PyramidTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		84BD4E62196E090C005891A4 /* GLTools.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GLTools.framework;
+			remoteRef = 84BD4E61196E090C005891A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84BD4E64196E090C005891A4 /* GLToolsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GLToolsTests.xctest;
+			remoteRef = 84BD4E63196E090C005891A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84BD4E66196E090C005891A4 /* libgltoolscpp.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgltoolscpp.a;
+			remoteRef = 84BD4E65196E090C005891A4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84195CC4196E088D00C2745F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BD4E89196E0A91005891A4 /* stone.tga in Resources */,
+				84195CD4196E088D00C2745F /* InfoPlist.strings in Resources */,
+				84195CE2196E088D00C2745F /* Images.xcassets in Resources */,
+				84195CDA196E088D00C2745F /* Credits.rtf in Resources */,
+				84195CE0196E088D00C2745F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84195CE5196E088D00C2745F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84195CF2196E088D00C2745F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84195CC2196E088D00C2745F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84195CDD196E088D00C2745F /* AppDelegate.m in Sources */,
+				84195CD6196E088D00C2745F /* main.m in Sources */,
+				84BD4E80196E0984005891A4 /* OGLSBView.mm in Sources */,
+				84BD4E6C196E095F005891A4 /* Pyramid.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84195CE3196E088D00C2745F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84195CF4196E088D00C2745F /* PyramidTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84195CEC196E088D00C2745F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84195CC5196E088D00C2745F /* Pyramid */;
+			targetProxy = 84195CEB196E088D00C2745F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84195CD2196E088D00C2745F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84195CD3196E088D00C2745F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84195CD8196E088D00C2745F /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84195CD9196E088D00C2745F /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		84195CDE196E088D00C2745F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84195CDF196E088D00C2745F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		84195CF0196E088D00C2745F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84195CF1196E088D00C2745F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84195CF5196E088D00C2745F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		84195CF6196E088D00C2745F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					../../GLTools/cpp/include,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84195CF8196E088D00C2745F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pyramid/Pyramid-Prefix.pch";
+				INFOPLIST_FILE = "Pyramid/Pyramid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84195CF9196E088D00C2745F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pyramid/Pyramid-Prefix.pch";
+				INFOPLIST_FILE = "Pyramid/Pyramid-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84195CFB196E088D00C2745F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pyramid.app/Contents/MacOS/Pyramid";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pyramid/Pyramid-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PyramidTests/PyramidTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		84195CFC196E088D00C2745F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Pyramid.app/Contents/MacOS/Pyramid";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pyramid/Pyramid-Prefix.pch";
+				INFOPLIST_FILE = "PyramidTests/PyramidTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84195CC1196E088D00C2745F /* Build configuration list for PBXProject "Pyramid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84195CF5196E088D00C2745F /* Debug */,
+				84195CF6196E088D00C2745F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84195CF7196E088D00C2745F /* Build configuration list for PBXNativeTarget "Pyramid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84195CF8196E088D00C2745F /* Debug */,
+				84195CF9196E088D00C2745F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84195CFA196E088D00C2745F /* Build configuration list for PBXNativeTarget "PyramidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84195CFB196E088D00C2745F /* Debug */,
+				84195CFC196E088D00C2745F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84195CBE196E088D00C2745F /* Project object */;
+}
