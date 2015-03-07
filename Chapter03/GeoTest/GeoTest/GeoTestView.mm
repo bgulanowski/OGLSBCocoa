@@ -14,11 +14,10 @@
 #include <GLFrustum.h>
 #include <GLGeometryTransform.h>
 
-#import <Carbon/Carbon.h>
+#import "OGLSB_private.h"
 
 @implementation GeoTestView {
 	
-	GLFrame             viewFrame;
 	GLFrustum           viewFrustum;
 	GLTriangleBatch     torusBatch;
 	GLMatrixStack       modelViewMatix;
@@ -42,29 +41,6 @@
     gltMakeTorus(torusBatch, 1.0f, 0.3f, 52, 26);
 	
     glPointSize(4.0f);
-}
-
-- (void)keyDown:(NSEvent *)theEvent {
-	
-	unsigned short key = [theEvent keyCode];
-	
-	if(key == kVK_UpArrow) {
-		viewFrame.RotateWorld(m3dDegToRad(-5.0), 1.0f, 0.0f, 0.0f);
-	}
-	else if(key == kVK_DownArrow) {
-		viewFrame.RotateWorld(m3dDegToRad(5.0), 1.0f, 0.0f, 0.0f);
-	}
-	else if(key == kVK_LeftArrow) {
-		viewFrame.RotateWorld(m3dDegToRad(-5.0), 0.0f, 1.0f, 0.0f);
-	}
-	else if(key == kVK_RightArrow) {
-		viewFrame.RotateWorld(m3dDegToRad(5.0), 0.0f, 1.0f, 0.0f);
-	}
-	else {
-		return;
-	}
-	
-	[self setNeedsDisplay:YES];
 }
 
 - (void)drawRect:(NSRect)dirtyRect {

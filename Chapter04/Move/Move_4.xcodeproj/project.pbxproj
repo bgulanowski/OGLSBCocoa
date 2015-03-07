@@ -91,6 +91,7 @@
 		8402F49C1959309C00AECDC1 /* MoveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoveView.h; sourceTree = "<group>"; };
 		8402F49D1959309C00AECDC1 /* MoveView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MoveView.mm; sourceTree = "<group>"; };
 		8402F49F195930D100AECDC1 /* Move.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Move.cpp; path = ../../../../../../Shared/Code/svn/oglsuperbible5/Src/Chapter04/Move/Move.cpp; sourceTree = "<group>"; };
+		84B0D5491AABBD9E001C669C /* OGLSB_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSB_private.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +211,7 @@
 			children = (
 				8402F4861959306000AECDC1 /* OGLSBView.h */,
 				8402F4871959306000AECDC1 /* OGLSBView.mm */,
+				84B0D5491AABBD9E001C669C /* OGLSB_private.h */,
 			);
 			name = Shared;
 			path = ../../Shared;

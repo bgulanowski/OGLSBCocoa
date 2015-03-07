@@ -91,6 +91,7 @@
 		8402F5CF19594E7C00AECDC1 /* PerspectiveView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PerspectiveView.mm; sourceTree = "<group>"; };
 		8402F5D419594EA600AECDC1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		8402F5D619594EAB00AECDC1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		84B0D54D1AABBF6D001C669C /* OGLSB_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSB_private.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +219,7 @@
 		8402F5CA19594E6400AECDC1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				84B0D54D1AABBF6D001C669C /* OGLSB_private.h */,
 				8402F5CB19594E6400AECDC1 /* OGLSBView.h */,
 				8402F5CC19594E6400AECDC1 /* OGLSBView.mm */,
 			);

@@ -78,6 +78,7 @@
 		849A8E881957F2C1008195C8 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		849A8E8A1957F2DB008195C8 /* GeoTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoTestView.h; sourceTree = "<group>"; };
 		849A8E8B1957F2DB008195C8 /* GeoTestView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GeoTestView.mm; sourceTree = "<group>"; };
+		84B0D5501AABC24D001C669C /* OGLSB_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSB_private.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +106,7 @@
 		8444D8071957EC6F00EE5832 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				84B0D5501AABC24D001C669C /* OGLSB_private.h */,
 				8444D8081957EC6F00EE5832 /* OGLSBView.h */,
 				8444D8091957EC6F00EE5832 /* OGLSBView.mm */,
 			);

@@ -76,6 +76,7 @@
 		84195CEF196E088D00C2745F /* PyramidTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PyramidTests-Info.plist"; sourceTree = "<group>"; };
 		84195CF1196E088D00C2745F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84195CF3196E088D00C2745F /* PyramidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyramidTests.m; sourceTree = "<group>"; };
+		84B0D54C1AABBDA9001C669C /* OGLSB_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSB_private.h; sourceTree = "<group>"; };
 		84BD4E5B196E090C005891A4 /* GLTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GLTools.xcodeproj; path = ../../GLTools/GLTools.xcodeproj; sourceTree = "<group>"; };
 		84BD4E67196E0931005891A4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		84BD4E6A196E095F005891A4 /* Pyramid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pyramid.h; sourceTree = "<group>"; };
@@ -158,8 +159,8 @@
 				84195CDB196E088D00C2745F /* AppDelegate.h */,
 				84195CDC196E088D00C2745F /* AppDelegate.m */,
 				84195CDE196E088D00C2745F /* MainMenu.xib */,
-				84195CE1196E088D00C2745F /* Images.xcassets */,
 				84BD4E88196E0A91005891A4 /* stone.tga */,
+				84195CE1196E088D00C2745F /* Images.xcassets */,
 				84195CD0196E088D00C2745F /* Supporting Files */,
 				84BD4E6A196E095F005891A4 /* Pyramid.h */,
 				84BD4E6B196E095F005891A4 /* Pyramid.mm */,
@@ -212,6 +213,7 @@
 			children = (
 				84BD4E7E196E0984005891A4 /* OGLSBView.h */,
 				84BD4E7F196E0984005891A4 /* OGLSBView.mm */,
+				84B0D54C1AABBDA9001C669C /* OGLSB_private.h */,
 			);
 			name = Shared;
 			path = ../../Shared;

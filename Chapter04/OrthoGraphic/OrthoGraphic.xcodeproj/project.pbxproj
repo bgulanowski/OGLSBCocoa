@@ -91,6 +91,7 @@
 		8402F57819594C5F00AECDC1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		8402F57A19594C6700AECDC1 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		8402F57C19594C9500AECDC1 /* OrthoGraphic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = OrthoGraphic.cpp; path = ../../../../../../Shared/Code/svn/oglsuperbible5/Src/Chapter04/OrthoGraphic/OrthoGraphic.cpp; sourceTree = "<group>"; };
+		8466F7E51AABC301000A8DF4 /* OGLSB_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OGLSB_private.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +209,7 @@
 		8402F56219594C2900AECDC1 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				8466F7E51AABC301000A8DF4 /* OGLSB_private.h */,
 				8402F56319594C2900AECDC1 /* OGLSBView.h */,
 				8402F56419594C2900AECDC1 /* OGLSBView.mm */,
 			);
@@ -585,6 +587,7 @@
 				8402F55E19594C2100AECDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8402F55F19594C2100AECDC1 /* Build configuration list for PBXNativeTarget "OrthoGraphicTests" */ = {
 			isa = XCConfigurationList;
@@ -593,6 +596,7 @@
 				8402F56119594C2100AECDC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

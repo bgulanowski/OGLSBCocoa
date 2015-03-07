@@ -151,9 +151,9 @@
 		845847BC193B8EC5008FFE77 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				84C8F7EA193D688000911378 /* OpenGL.framework */,
 				84C8F7E8193D687800911378 /* libstdc++.dylib */,
 				845847BD193B8EC5008FFE77 /* Cocoa.framework */,
+				84C8F7EA193D688000911378 /* OpenGL.framework */,
 				845847D2193B8EC5008FFE77 /* XCTest.framework */,
 				845847BF193B8EC5008FFE77 /* Other Frameworks */,
 			);

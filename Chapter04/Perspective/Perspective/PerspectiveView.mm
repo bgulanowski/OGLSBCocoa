@@ -8,6 +8,8 @@
 
 #import "PerspectiveView.h"
 
+#import "OGLSB_private.h"
+
 #include <GLTools.h>	// OpenGL toolkit
 #include <GLMatrixStack.h>
 #include <GLFrame.h>
@@ -17,10 +19,7 @@
 
 #include <math.h>
 
-#import <Carbon/Carbon.h>
-
 @implementation PerspectiveView {
-	GLFrame             viewFrame;
 	GLFrustum           viewFrustum;
 	GLBatch             tubeBatch;
 	GLBatch             innerBatch;
@@ -394,29 +393,6 @@
 	innerBatch.Vertex3f(35.0f, 35.0f, bZ);
 	
 	innerBatch.End();
-}
-
-- (void)keyDown:(NSEvent *)theEvent {
-	
-	unsigned short key = [theEvent keyCode];
-	
-	if(key == kVK_UpArrow) {
-		viewFrame.RotateWorld(m3dDegToRad(-5.0), 1.0f, 0.0f, 0.0f);
-	}
-	else if(key == kVK_DownArrow) {
-		viewFrame.RotateWorld(m3dDegToRad(5.0), 1.0f, 0.0f, 0.0f);
-	}
-	else if(key == kVK_LeftArrow) {
-		viewFrame.RotateWorld(m3dDegToRad(-5.0), 0.0f, 1.0f, 0.0f);
-	}
-	else if(key == kVK_RightArrow) {
-		viewFrame.RotateWorld(m3dDegToRad(5.0), 0.0f, 1.0f, 0.0f);
-	}
-	else {
-		return;
-	}
-	
-	[self setNeedsDisplay:YES];
 }
 
 - (void)reshape {
