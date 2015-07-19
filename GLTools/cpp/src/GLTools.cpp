@@ -1148,8 +1148,7 @@ bool gltLoadShaderFile(const char *szFile, GLuint shader)
         rewind(fp);
 		
         // Read the whole file in
-        if (shaderText != NULL)
-            fread(shaderText, 1, shaderLength, fp);
+        fread(shaderText, 1, shaderLength, fp);
 		
         // Make sure it is null terminated and close the file
         shaderText[shaderLength] = '\0';
